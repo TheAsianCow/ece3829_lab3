@@ -24,7 +24,7 @@ module lab3_top(
     input clk,
     input reset,
     input [7:0] sw,
-    output dout,
+    output [15:0]dout,
     output sclk,
     output sync,
     output led,
@@ -48,8 +48,5 @@ module lab3_top(
     
     wire clk_100k;
     slowclk_100k clk0(.clk_in(clk),.clk_out(clk_100k));
-    
-    always @ (posedge clk_100k, posedge reset)begin
-    end
     
 endmodule
