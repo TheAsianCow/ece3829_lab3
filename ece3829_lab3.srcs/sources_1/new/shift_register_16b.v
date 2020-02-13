@@ -28,12 +28,12 @@ module shift_register_16b(
     );
     
     reg [15:0]tmp_reg;
-    reg [3:0] counter;
+    reg [4:0] counter;
     
 always @ (posedge clk) begin // shift left    
     counter <= counter + 1'b1;
     if(counter==0) tmp_reg = in;
-    if(counter == 16-1)
+    if(counter == 16)
         sync <= 1'b1;
     else begin
         dac <= tmp_reg[15];
