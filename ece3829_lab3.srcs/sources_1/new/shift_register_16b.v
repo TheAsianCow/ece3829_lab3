@@ -22,20 +22,23 @@
 
 module shift_register_16b(
     input clk,
-    input in,
+    input [15:0] in,
     output reg sync,
-    output reg [15:0] dac
+    output reg dac
     );
     
+    reg [15:0]tmp_reg;
     reg [3:0] counter;
     
-always @ (posedge clk) begin // shift left
-    dac <= {dac[14:0], in};
+always @ (posedge clk) begin // shift left    
     counter <= counter + 1'b1;
-              
-    if (counter == 16-1) 
+    if(counter==0) tmp_reg = in;
+    if(counter == 16-1)
         sync <= 1'b1;
-    else
+    else begin
+        dac <= tmp_reg[15];
+        tmp_reg <= {tmp_reg[14:0],tmp_reg[15]};
         sync <= 1'b0; 
+        end
     end    
 endmodule
