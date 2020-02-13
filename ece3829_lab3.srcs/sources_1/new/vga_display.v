@@ -21,7 +21,10 @@
 
 
 module vga_display(
-    input [15:0] sw,
+    input up,
+    input down,
+    input left,
+    input right,
     input clk,
     input reset,
     output Hsync,
@@ -35,11 +38,6 @@ module vga_display(
     wire [10:0] y;
     wire blank;
     
-    localparam S0 = 0, S1 = 1, S2 = 2, S3 = 3, S4 = 4;
-    
-    reg [2:0] state = 0; // Current/Blank State
-    
-    
     //vga stuff
     vga_controller_640_60 display(
         .rst(reset), 
@@ -50,4 +48,9 @@ module vga_display(
         .vcount(x),
         .blank(blank)
     );
+    
+    // Notes for vga
+    // Add if statements for state 
+    // Add state machine to move the box position
+    // Remember to add boundaries
 endmodule    
