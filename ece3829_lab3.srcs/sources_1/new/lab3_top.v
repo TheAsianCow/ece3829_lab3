@@ -46,9 +46,13 @@ module lab3_top(
    // Clock in ports
     .clk_in1(clk));      // input clk_in1
     
-    wire clk_100k;
+    wire clk_100k, clk_4k;
+    wire [7:0] sawtooth;
     slowclk_100k clk0(.clk_in(clk),.clk_out(clk_100k));
+    slowclk_4k clk1(.clk_in(clk),.clk_out(clk_4k));
     
-    shift_register_16b dac(.clk(sclk),.in({8'b00000000,sw}),.sync(sync),.dac(dout));
+//    shift_register_16b dac(.clk(sclk),.in({8'b00000000,sw}),.sync(sync),.dac(dout));
+    dac_sawtooth waveform(.clk(clk_100k),.reset(reset),.sawtooth_wave(sawtooth));
+    shift_register_16b dac(.clk(sclk),.in({8'b00000000,sawtooth}),.sync(sync),.dac(dout));
     
 endmodule

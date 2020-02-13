@@ -22,43 +22,64 @@
 
 module dac_sawtooth(
     input clk,
-    input sync, 
+    input reset,
     output[7:0] sawtooth_wave
     );
 
-    localparam step = 1'b0;
-    reg state = 1'b0;
+    localparam [1:0]rst = 2'b00, step = 2'b01, waiting = 2'b10;
+    reg [1:0]state, next_state;
     reg[7:0] temp_wave = 8'b0; // Value for the waveform
     reg [4:0] counter = 5'b0; // Counter to get to 25 steps
+    wire step_en,step_res;
     
-    always @ (state, clk) // Sensitivity List
-
-    case (state) // Will change based on state
-    step: // State to generate wave steps
-        begin
-        if  (!sync) // sync has to be active low
+    always@(posedge clk, posedge reset)begin
+        if(reset)begin
+            state <= rst;
+            counter <= 5'b0;
+        end
+        else begin
+            state <= next_state;
+            if(counter==5'd24)counter <= 5'b0;
+            else counter <= counter + 1'b1;
+        end
+    end
+    
+    assign step_en = (counter==5'd24)?1'b1:1'b0;
+    
+    always @ (state, clk, step_en) // Sensitivity List
+        case (state) // Will change based on state
+        reset: begin
+            if(clk) next_state = step;
+            else begin
+                next_state = rst;
+                temp_wave = 8'b0;
+            end
+        end
+        step: // State to generate wave steps
             begin
-            if (counter == 8'd24) // if counter reaches 25 steps, the state goes to default and the counter resets
+            if (step_en) // if counter reaches 25 steps, the state goes to default and the counter resets
                 begin
-                state <= 1'b1;
-                counter <= 0'b0;
+                next_state = rst;
+                temp_wave = 8'b0;
                 end
             else // increment by 10 everytime
                 begin
-                counter <= counter + 1'b1;
-                temp_wave <= temp_wave + 8'd10;
+                temp_wave = temp_wave + 8'd10;
+                next_state = waiting;
                 end
             end
-        else // remains the same (latch prevention)
-            temp_wave <= temp_wave;
+        waiting: begin
+            if(step_en) next_state = step;
+            else next_state = waiting;
         end
-    default: // zero state
-        begin      
-        temp_wave <= 8'b0;
-        state <= 1'b0;
-        end
-    endcase
+        default: // zero state
+            begin      
+            temp_wave = 8'b0;
+            next_state = rst;
+            end
+        endcase
     
-    assign sawtooth = temp_wave;
+    assign sawtooth_wave = temp_wave;
+
 
 endmodule
