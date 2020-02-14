@@ -28,7 +28,7 @@ module dac_sawtooth(
 
     localparam [1:0]rst = 2'b00, step = 2'b01, waiting = 2'b10;
     reg [1:0]state, next_state;
-    reg[7:0] temp_wave = 8'b0; // Value for the waveform
+    reg [7:0] temp_wave = 8'b0; // Value for the waveform
     reg [4:0] counter = 5'b0; // Counter to get to 25 steps
     wire step_en,step_res;
     

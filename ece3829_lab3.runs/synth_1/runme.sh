@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1'
+HD_PWD='C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log lab3_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab3_top.tcl
+EAStep vivado -log vga_display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_display.tcl
