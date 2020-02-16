@@ -21,12 +21,13 @@
 
 
 module vga_display(
-    input up,
-    input down,
-    input left,
-    input right,
+    input up_i,
+    input down_i,
+    input left_i,
+    input right_i,
     input clk,
     input reset,
+    output led,
     output Hsync,
     output Vsync,
     output reg [3:0] vgaRed,
@@ -34,17 +35,28 @@ module vga_display(
     output reg [3:0] vgaBlue
     );
     
+    wire sclk;
+    
     localparam start = 0, dir_right = 1, dir_left = 2, dir_up = 3, dir_down = 4, other = 5;
     localparam box_size = 32;
+    
+    vga_clk clk2(.clk_in(clk), .clk_out(sclk));
     
     wire [10:0] x;
     wire [10:0] y;
     wire blank;
     
+    wire up, down, right, left;
+    
+    debounce du(.clk(sclk), .button_press(up_i), .pulse_out(up));
+    debounce dd(.clk(sclk), .button_press(down_i), .pulse_out(down));
+    debounce dr(.clk(sclk), .button_press(right_i), .pulse_out(right));
+    debounce dl(.clk(sclk), .button_press(left_i), .pulse_out(left));
+    
     //vga stuff
     vga_controller_640_60 display(
         .rst(reset), 
-        .pixel_clk(clk),
+        .pixel_clk(sclk),
         .HS(Hsync),
         .VS(Vsync),
         .hcount(y),
@@ -58,10 +70,11 @@ module vga_display(
     reg [9:0] y_low = 10'b0;
     reg [9:0] y_high = 10'd32;
     
-    reg [2:0] state, next_state;
+    reg [2:0] next_state;
+    wire [2:0] state;
     
     // which state to go to next
-    always @ (reset, clk, left, right, up, down)
+    always @ (reset, sclk, left, right, up, down)
     begin
     if (reset)
         next_state <= start;
@@ -75,9 +88,8 @@ module vga_display(
         next_state <= dir_left;
     else
         next_state <= other; 
-    assign state = next_state;
     end
-    
+     assign state = next_state;
     // direction logic
     always @ (state)
     begin
