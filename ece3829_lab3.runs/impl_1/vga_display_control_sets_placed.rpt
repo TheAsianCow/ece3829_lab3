@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Feb 16 17:04:32 2020
+| Date         : Sun Feb 16 17:11:32 2020
 | Host         : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vga_display_control_sets_placed.rpt
 | Design       : vga_display
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |           15 |
+| No           | No                    | No                     |              26 |           13 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              35 |           13 |
 | Yes          | No                    | No                     |               8 |            8 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              59 |           16 |
+| Yes          | Yes                   | No                     |              59 |           14 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,22 +74,22 @@ Table of Contents
 |      Clock Signal      |      Enable Signal      |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
 +------------------------+-------------------------+------------------------------+------------------+----------------+
 |  clk_IBUF_BUFG         |                         |                              |                1 |              1 |
-|  new_press_reg_i_2_n_0 |                         | display/HS0                  |                1 |              1 |
+|  vgaRed0               |                         | display/blank                |                1 |              1 |
 |  new_press_reg_i_2_n_0 |                         | display/VS0                  |                1 |              1 |
+|  new_press_reg_i_2_n_0 |                         | display/HS0                  |                1 |              1 |
 |  new_press_reg_i_2_n_0 | dd/stable0_out          |                              |                1 |              1 |
 |  new_press_reg_i_2_n_0 | dd/new_press_i_1__0_n_0 |                              |                1 |              1 |
 |  new_press_reg_i_2_n_0 | dl/new_press_i_1__2_n_0 |                              |                1 |              1 |
 |  new_press_reg_i_2_n_0 | dl/stable0_out          |                              |                1 |              1 |
-|  new_press_reg_i_2_n_0 | dr/stable0_out          |                              |                1 |              1 |
 |  new_press_reg_i_2_n_0 | dr/new_press_i_1__1_n_0 |                              |                1 |              1 |
-|  new_press_reg_i_2_n_0 | du/stable0_out          |                              |                1 |              1 |
+|  new_press_reg_i_2_n_0 | dr/stable0_out          |                              |                1 |              1 |
 |  new_press_reg_i_2_n_0 | du/clear                |                              |                1 |              1 |
-|  display/blank_reg_0   |                         | display/blank                |                1 |              1 |
-|  new_press_reg_i_2_n_0 |                         |                              |                3 |              5 |
-|  dl/E[0]               |                         |                              |                6 |             10 |
+|  new_press_reg_i_2_n_0 | du/stable0_out          |                              |                1 |              1 |
+|  new_press_reg_i_2_n_0 |                         |                              |                4 |              5 |
+|  dl/E[0]               |                         |                              |                3 |             10 |
 |  du/E[0]               |                         |                              |                5 |             10 |
 |  new_press_reg_i_2_n_0 |                         | display/hcounter[10]_i_1_n_0 |                4 |             11 |
-|  new_press_reg_i_2_n_0 | display/eqOp            | display/vcounter[10]_i_1_n_0 |                4 |             11 |
+|  new_press_reg_i_2_n_0 | display/eqOp            | display/vcounter[10]_i_1_n_0 |                2 |             11 |
 |  new_press_reg_i_2_n_0 | dd/count                | dd/new_press_i_1__0_n_0      |                3 |             12 |
 |  new_press_reg_i_2_n_0 | dl/count                | dl/new_press_i_1__2_n_0      |                3 |             12 |
 |  new_press_reg_i_2_n_0 | dr/count                | dr/new_press_i_1__1_n_0      |                3 |             12 |

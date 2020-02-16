@@ -142,11 +142,11 @@ module vga_display(
         end
     else
         begin
-           if (x >= x_low && x_high > x && y >= y_low && y_high > x)
+           if (x >= x_low && x_high > x && y >= y_low && y_high > y)
 	       begin
-	       vgaRed = 4'b1111;
-	       vgaGreen = 4'b1111;
-	       vgaBlue = 4'b1111;
+	       vgaRed <= 4'b1111;
+	       vgaGreen <= 4'b1111;
+	       vgaBlue <= 4'b1111;
 	       end
 	   end
 	end

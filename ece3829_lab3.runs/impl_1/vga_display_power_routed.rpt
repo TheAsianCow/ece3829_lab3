@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Feb 16 17:04:58 2020
+| Date             : Sun Feb 16 17:11:59 2020
 | Host             : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_display_power_routed.rpt -pb vga_display_power_summary_routed.pb -rpx vga_display_power_routed.rpx
 | Design           : vga_display
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      341 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      124 |     20800 |            0.60 |
+| Slice Logic    |    <0.001 |      340 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      125 |     20800 |            0.60 |
 |   CARRY4       |    <0.001 |       26 |      8150 |            0.32 |
 |   Register     |    <0.001 |      128 |     41600 |            0.31 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
