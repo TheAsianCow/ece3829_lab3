@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Feb 16 17:11:57 2020
+| Date         : Sun Feb 16 18:44:32 2020
 | Host         : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command      : report_drc -file vga_display_drc_routed.rpt -pb vga_display_drc_routed.pb -rpx vga_display_drc_routed.rpx
 | Design       : vga_display
@@ -49,17 +49,17 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net dl/E[0] is a gated clock net sourced by a combinational pin dl/x_high_reg[9]_i_2/O, cell dl/x_high_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net vgaRed0 is a gated clock net sourced by a combinational pin vgaRed_reg[3]_i_1/O, cell vgaRed_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net du/E[0] is a gated clock net sourced by a combinational pin du/y_low_reg[9]_i_2/O, cell du/y_low_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net x_high_reg[9]_i_2_n_0 is a gated clock net sourced by a combinational pin x_high_reg[9]_i_2/O, cell x_high_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net vgaRed0 is a gated clock net sourced by a combinational pin vgaRed_reg[3]_i_1/O, cell vgaRed_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net y_high__0 is a gated clock net sourced by a combinational pin y_low_reg[9]_i_2/O, cell y_low_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

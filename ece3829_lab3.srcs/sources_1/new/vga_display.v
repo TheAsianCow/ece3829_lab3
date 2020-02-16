@@ -36,11 +36,13 @@ module vga_display(
     );
     
     wire sclk;
+    wire clk_1M;
     
     localparam start = 0, dir_right = 1, dir_left = 2, dir_up = 3, dir_down = 4, other = 5;
     localparam box_size = 32;
     
     vga_clk clk2(.clk_in(clk), .clk_out(sclk));
+    slowclk_1M clk3(.clk_in(clk), .clk_out(clk_1M));
     
     wire [10:0] x;
     wire [10:0] y;
@@ -48,10 +50,10 @@ module vga_display(
     
     wire up, down, right, left;
     
-    debounce du(.clk(sclk), .button_press(up_i), .pulse_out(up));
-    debounce dd(.clk(sclk), .button_press(down_i), .pulse_out(down));
-    debounce dr(.clk(sclk), .button_press(right_i), .pulse_out(right));
-    debounce dl(.clk(sclk), .button_press(left_i), .pulse_out(left));
+   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset), .clk_en(clk_1M));
+   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset), .clk_en(clk_1M));
+   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset), .clk_en(clk_1M));
+   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset), .clk_en(clk_1M));
     
     //vga stuff
     vga_controller_640_60 display(
