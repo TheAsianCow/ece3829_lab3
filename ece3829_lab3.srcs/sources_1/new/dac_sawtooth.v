@@ -22,64 +22,73 @@
 
 module dac_sawtooth(
     input clk,
+    input clk_100k,
     input reset,
-    output[7:0] sawtooth_wave
+    output [7:0]sawtooth_wave
     );
 
-    localparam [1:0]rst = 2'b00, step = 2'b01, waiting = 2'b10;
-    reg [1:0]state, next_state;
-    reg[7:0] temp_wave = 8'b0; // Value for the waveform
-    reg [4:0] counter = 5'b0; // Counter to get to 25 steps
-    wire step_en,step_res;
+    localparam res = 0, step = 1;
+    reg state, next_state;
+    reg [7:0] count, next_count;
     
-    always@(posedge clk, posedge reset)begin
+    always@(posedge clk_100k, posedge reset)begin
         if(reset)begin
-            state <= rst;
-            counter <= 5'b0;
+            state <= res;
+            count <= 0;
         end
         else begin
             state <= next_state;
-            if(counter==5'd24)counter <= 5'b0;
-            else counter <= counter + 1'b1;
+            count <= next_count;
         end
     end
     
-    assign step_en = (counter==5'd24)?1'b1:1'b0;
-    
-    always @ (state, clk, step_en) // Sensitivity List
-        case (state) // Will change based on state
-        reset: begin
-            if(clk) next_state = step;
-            else begin
-                next_state = rst;
-                temp_wave = 8'b0;
+    always@(state, count)begin
+        case(state)
+            res: begin
+                next_count = 0;
+                next_state = step;
             end
-        end
-        step: // State to generate wave steps
-            begin
-            if (step_en) // if counter reaches 25 steps, the state goes to default and the counter resets
-                begin
-                next_state = rst;
-                temp_wave = 8'b0;
-                end
-            else // increment by 10 everytime
-                begin
-                temp_wave = temp_wave + 8'd10;
-                next_state = waiting;
-                end
-            end
-        waiting: begin
-            if(step_en) next_state = step;
-            else next_state = waiting;
-        end
-        default: // zero state
-            begin      
-            temp_wave = 8'b0;
-            next_state = rst;
+            step: begin
+                next_count = count+3;
+                if((count+3)>=128) next_state = res;
+                else next_state = step;
             end
         endcase
+    end 
     
-    assign sawtooth_wave = temp_wave;
+    assign sawtooth_wave = count;
 
+//    initial state = zero;
+//    initial temp_wave = 0;
+    
+//    always@(posedge clk_100k)begin
+//        case(state)
+//            zero: if(clk_100k)state <= step;
+//            step: if(clk_100k)state <= waiting;
+//                    else state <= zero;
+//            waiting: if(~clk_100k) state <= zero;
+//            default:;
+//        endcase
+//    end
+//    always@(state, clk_100k)begin
+//        case(state)
+//            zero: sawtooth_wave = temp_wave;
+//            step: begin
+//                if(temp_wave==128)temp_wave = 0;
+//                else temp_wave = temp_wave+2;
+//                sawtooth_wave = temp_wave;
+//            end
+//            waiting: sawtooth_wave = temp_wave;
+//        endcase
+//    end
 
+//    reg[7:0] tmp_wave = 8'b0;
+//    always@(posedge clk_100k, posedge reset)begin
+//        if(reset) tmp_wave = 8'b0;
+//        else if(tmp_wave==128) tmp_wave = 8'b0;
+//        else tmp_wave = tmp_wave + 2;
+//    end
+    
+//    assign sawtooth_wave = tmp_wave;
+    
 endmodule

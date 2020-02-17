@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Thu Feb 13 17:48:31 2020
+| Date         : Sun Feb 16 23:06:28 2020
 | Host         : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
 | Command      : report_drc -file lab3_top_drc_routed.rpt -pb lab3_top_drc_routed.pb -rpx lab3_top_drc_routed.rpx
 | Design       : lab3_top
@@ -25,12 +25,13 @@ Table of Contents
            Ruledeck: default
              Max violations: <unlimited>
              Violations found: 3
-+----------+----------+-----------------------------------------------------+------------+
-| Rule     | Severity | Description                                         | Violations |
-+----------+----------+-----------------------------------------------------+------------+
-| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 2          |
-+----------+----------+-----------------------------------------------------+------------+
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -49,12 +50,13 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net waveform/counter_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin waveform/counter_reg[4]_i_2/O, cell waveform/counter_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net clk0/sync_OBUF is a gated clock net sourced by a combinational pin clk0/sync_OBUF_inst_i_1/O, cell clk0/sync_OBUF_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
-PDRC-153#2 Warning
-Gated clock check  
-Net waveform/temp_wave_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin waveform/temp_wave_reg[7]_i_2/O, cell waveform/temp_wave_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT clk0/sync_OBUF_inst_i_1 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
+waveform/count_reg[0], waveform/count_reg[1], waveform/count_reg[2], waveform/count_reg[3], waveform/count_reg[4], waveform/count_reg[5], waveform/count_reg[6], waveform/count_reg[7], waveform/state_reg
 Related violations: <none>
 
 

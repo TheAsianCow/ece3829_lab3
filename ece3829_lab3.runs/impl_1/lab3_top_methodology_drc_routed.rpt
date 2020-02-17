@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Thu Feb 13 17:48:32 2020
+| Date         : Sun Feb 16 23:06:29 2020
 | Host         : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
 | Command      : report_methodology -file lab3_top_methodology_drc_routed.rpt -pb lab3_top_methodology_drc_routed.pb -rpx lab3_top_methodology_drc_routed.rpx
 | Design       : lab3_top
@@ -23,107 +23,69 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 18
-+-----------+------------------+------------------------------------------------------------------+------------+
-| Rule      | Severity         | Description                                                      | Violations |
-+-----------+------------------+------------------------------------------------------------------+------------+
-| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree               | 1          |
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 2          |
-| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                        | 1          |
-| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
-| TIMING-20 | Warning          | Non-clocked latch                                                | 13         |
-+-----------+------------------+------------------------------------------------------------------+------------+
+             Violations found: 11
++-----------+------------------+------------------------------------------------+------------+
+| Rule      | Severity         | Description                                    | Violations |
++-----------+------------------+------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks | 2          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                    | 9          |
++-----------+------------------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-4#1 Critical Warning
-Invalid primary clock redefinition on a clock tree  
-Invalid clock redefinition on a clock tree. The primary clock instance_name/inst/clk_in1 is defined downstream of clock sys_clk_pin and overrides its insertion delay and/or waveform definition
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_10M_clk_wiz_0 and clk_10M_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_10M_clk_wiz_0] -to [get_clocks clk_10M_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_10M_clk_wiz_0_1 and clk_10M_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_10M_clk_wiz_0_1] -to [get_clocks clk_10M_clk_wiz_0]
 Related violations: <none>
 
 TIMING-17#1 Critical Warning
 Non-clocked sequential cell  
-The clock pin waveform/state_reg[0]/C is not reached by a timing clock
+The clock pin waveform/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Critical Warning
 Non-clocked sequential cell  
-The clock pin waveform/state_reg[1]/C is not reached by a timing clock
+The clock pin waveform/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-27#1 Critical Warning
-Invalid primary clock on hierarchical pin  
-A primary clock instance_name/inst/clk_in1 is created on an inappropriate internal pin instance_name/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin waveform/count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
-CKLD-2#1 Warning
-Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
-Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, clk0/clk, instance_name/clk_in1
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin waveform/count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch waveform/counter_reg[0] cannot be properly analyzed as its control pin waveform/counter_reg[0]/G is not reached by a timing clock
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin waveform/count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch waveform/counter_reg[1] cannot be properly analyzed as its control pin waveform/counter_reg[1]/G is not reached by a timing clock
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin waveform/count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch waveform/counter_reg[2] cannot be properly analyzed as its control pin waveform/counter_reg[2]/G is not reached by a timing clock
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin waveform/count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch waveform/counter_reg[3] cannot be properly analyzed as its control pin waveform/counter_reg[3]/G is not reached by a timing clock
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin waveform/count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#5 Warning
-Non-clocked latch  
-The latch waveform/counter_reg[4] cannot be properly analyzed as its control pin waveform/counter_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#6 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[0] cannot be properly analyzed as its control pin waveform/temp_wave_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#7 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[1] cannot be properly analyzed as its control pin waveform/temp_wave_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#8 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[2] cannot be properly analyzed as its control pin waveform/temp_wave_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#9 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[3] cannot be properly analyzed as its control pin waveform/temp_wave_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#10 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[4] cannot be properly analyzed as its control pin waveform/temp_wave_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#11 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[5] cannot be properly analyzed as its control pin waveform/temp_wave_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#12 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[6] cannot be properly analyzed as its control pin waveform/temp_wave_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#13 Warning
-Non-clocked latch  
-The latch waveform/temp_wave_reg[7] cannot be properly analyzed as its control pin waveform/temp_wave_reg[7]/G is not reached by a timing clock
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin waveform/state_reg/C is not reached by a timing clock
 Related violations: <none>
 
 

@@ -15,28 +15,22 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8436 
+INFO: Helper process launched with PID 22364 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 959.180 ; gain = 234.445
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 958.637 ; gain = 234.492
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'lab3_top' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/.Xil/Vivado-17244-WIN-0JR3P7S3KIR/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/.Xil/Vivado-17244-WIN-0JR3P7S3KIR/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/.Xil/Vivado-19860-WIN-0JR3P7S3KIR/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/.Xil/Vivado-19860-WIN-0JR3P7S3KIR/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'slowclk_100k' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_100K.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'slowclk_100k' (2#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_100K.v:23]
-INFO: [Synth 8-6157] synthesizing module 'slowclk_4k' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_4k.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'slowclk_4k' (3#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_4k.v:23]
 INFO: [Synth 8-6157] synthesizing module 'dac_sawtooth' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:23]
-	Parameter rst bound to: 2'b00 
-	Parameter step bound to: 2'b01 
-	Parameter waiting bound to: 2'b10 
-WARNING: [Synth 8-567] referenced signal 'reset' should be on the sensitivity list [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:39]
-WARNING: [Synth 8-567] referenced signal 'counter' should be on the sensitivity list [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:39]
-WARNING: [Synth 8-567] referenced signal 'temp_wave' should be on the sensitivity list [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'dac_sawtooth' (4#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:23]
+	Parameter res bound to: 0 - type: integer 
+	Parameter step bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dac_sawtooth' (3#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:23]
 INFO: [Synth 8-6157] synthesizing module 'shift_register_16b' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:23]
-WARNING: [Synth 8-6090] variable 'tmp_reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'shift_register_16b' (5#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'shift_register_16b' (4#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:23]
 WARNING: [Synth 8-3848] Net seg in module/entity lab3_top does not have driver. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:31]
 WARNING: [Synth 8-3848] Net an in module/entity lab3_top does not have driver. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:32]
 WARNING: [Synth 8-3848] Net Hsync in module/entity lab3_top does not have driver. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:33]
@@ -44,7 +38,8 @@ WARNING: [Synth 8-3848] Net Vsync in module/entity lab3_top does not have driver
 WARNING: [Synth 8-3848] Net vgaRed in module/entity lab3_top does not have driver. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:35]
 WARNING: [Synth 8-3848] Net vgaGreen in module/entity lab3_top does not have driver. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:36]
 WARNING: [Synth 8-3848] Net vgaBlue in module/entity lab3_top does not have driver. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'lab3_top' (6#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lab3_top' (5#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:23]
+WARNING: [Synth 8-3331] design dac_sawtooth has unconnected port clk
 WARNING: [Synth 8-3331] design lab3_top has unconnected port seg[6]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port seg[5]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port seg[4]
@@ -79,7 +74,7 @@ WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1032.699 ; gain = 307.965
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1032.563 ; gain = 308.418
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -92,12 +87,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1032.699 ; gain = 307.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1032.563 ; gain = 308.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1032.699 ; gain = 307.965
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1032.563 ; gain = 308.418
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.563 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -110,20 +105,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1128.070 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1116.574 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1128.070 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1116.574 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1128.070 ; gain = 403.336
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1116.574 ; gain = 392.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1128.070 ; gain = 403.336
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1116.574 ; gain = 392.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -132,12 +127,10 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
 Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1128.070 ; gain = 403.336
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1116.574 ; gain = 392.430
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'temp_wave_reg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:45]
-WARNING: [Synth 8-327] inferring latch for variable 'counter_reg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:46]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1128.070 ; gain = 403.336
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1116.574 ; gain = 392.430
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -150,24 +143,18 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input      9 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 3     
 +---Registers : 
 	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                7 Bit    Registers := 1     
-	                5 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 3     
-	   4 Input      8 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
-	   4 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -181,39 +168,24 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
 	                7 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-Module slowclk_4k 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      5 Bit       Adders := 1     
-+---Registers : 
-	                5 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
 Module dac_sawtooth 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input      9 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
-	                2 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
-	   4 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 Module shift_register_16b 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -264,7 +236,7 @@ WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1128.070 ; gain = 403.336
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1116.574 ; gain = 392.430
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -276,13 +248,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1128.070 ; gain = 403.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1116.574 ; gain = 392.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1129.871 ; gain = 405.137
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1119.563 ; gain = 395.418
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -294,7 +266,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1131.141 ; gain = 406.406
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1129.594 ; gain = 405.449
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -318,13 +290,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -343,25 +315,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -379,54 +351,49 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
-|2     |LUT1      |     2|
-|3     |LUT2      |     3|
-|4     |LUT3      |     4|
-|5     |LUT4      |    15|
-|6     |LUT5      |    17|
-|7     |LUT6      |    14|
-|8     |FDCE      |     2|
-|9     |FDRE      |    31|
-|10    |LD        |    13|
-|11    |IBUF      |     1|
-|12    |OBUF      |     4|
-|13    |OBUFT     |    25|
+|2     |LUT1      |     1|
+|3     |LUT2      |     4|
+|4     |LUT3      |     6|
+|5     |LUT4      |    13|
+|6     |LUT5      |     4|
+|7     |LUT6      |     4|
+|8     |FDCE      |     9|
+|9     |FDRE      |    24|
+|10    |IBUF      |     1|
+|11    |OBUF      |     4|
+|12    |OBUFT     |    25|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+-----------+-------------------+------+
 |      |Instance   |Module             |Cells |
 +------+-----------+-------------------+------+
-|1     |top        |                   |   133|
-|2     |  clk0     |slowclk_100k       |    17|
-|3     |  dac      |shift_register_16b |    48|
-|4     |  waveform |dac_sawtooth       |    36|
+|1     |top        |                   |    97|
+|2     |  clk0     |slowclk_100k       |    27|
+|3     |  dac      |shift_register_16b |    18|
+|4     |  waveform |dac_sawtooth       |    20|
 +------+-----------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1135.930 ; gain = 315.824
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.930 ; gain = 411.195
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1134.398 ; gain = 326.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1134.398 ; gain = 410.254
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1148.980 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1137.684 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1154.156 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1150.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 13 instances were transformed.
-  LD => LDCE: 13 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-25 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+20 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1154.156 ; gain = 697.371
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1154.156 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1150.211 ; gain = 692.945
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1150.211 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/lab3_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file lab3_top_utilization_synth.rpt -pb lab3_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 13 17:47:23 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 16 23:05:19 2020...
