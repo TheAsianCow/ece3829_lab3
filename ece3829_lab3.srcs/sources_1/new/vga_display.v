@@ -50,11 +50,11 @@ module vga_display(
     
     wire up, down, right, left;
     
-   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset), .clk_en(clk_1M));
-   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset), .clk_en(clk_1M));
-   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset), .clk_en(clk_1M));
-   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset), .clk_en(clk_1M));
-    
+   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset));
+   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset));
+   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset));
+   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset));
+
     //vga stuff
     vga_controller_640_60 display(
         .rst(reset), 
@@ -68,9 +68,7 @@ module vga_display(
     
     // bounds for the box
     reg [9:0] x_low = 10'b0;
-    reg [9:0] x_high = 10'd32;
     reg [9:0] y_low = 10'b0;
-    reg [9:0] y_high = 10'd32;
     
     reg [2:0] next_state;
     wire [2:0] state;
@@ -80,61 +78,47 @@ module vga_display(
     begin
     if (reset)
         next_state <= start;
-    else if (up && y_low > 0)
+    else if (up && x_low > 0)
         next_state <= dir_up;
-    else if (down && y_high < 480)
+    else if (down && x_low + box_size < 480-1)
         next_state <= dir_down;
-    else if (right && x_high < 480)
+    else if (right && y_low + box_size < 640-1)
         next_state <= dir_right;  
-    else if (left && x_low > 0)
+    else if (left && y_low > 0)
         next_state <= dir_left;
     else
         next_state <= other; 
     end
+     
      assign state = next_state;
+    
     // direction logic
     always @ (state)
     begin
     case (state)
     start:
         begin
-        x_low = 10'b0;
-        x_high = 10'd32;
-        y_low = 10'b0;
-        y_high = 10'd32;
-        end
-    dir_up:
-        begin
-        y_low <= y_low - box_size;
-        y_high <= y_high - box_size;
+        x_low <= 10'b0;
+        y_low <= 10'b0;
         end
     dir_down:
-        begin
-        y_low <= y_low + box_size;
-        y_high <= y_high + box_size;
-        end
-    dir_right:
-        begin
         x_low <= x_low + box_size;
-        x_high <= x_high + box_size;
-        end
-    dir_left:
-        begin
+    dir_up:
         x_low <= x_low - box_size;
-        x_high <= x_high - box_size;
-        end
+    dir_left:
+        y_low <= y_low + box_size;
+    dir_right:
+        y_low <= y_low - box_size;
     default:
         begin
-        x_high <= x_high;
         x_low <= x_low;
-        y_high <= y_high;
         y_low <= y_low;
         end      
     endcase
     end
     
     // logic for drawing out box
-    always @ (clk, y_low, y_high, x_low, x_high)
+    always @ (clk, y_low, x_low)
     begin
     if (blank) 
         begin
@@ -144,12 +128,18 @@ module vga_display(
         end
     else
         begin
-           if (x >= x_low && x_high > x && y >= y_low && y_high > y)
-	       begin
-	       vgaRed <= 4'b1111;
-	       vgaGreen <= 4'b1111;
-	       vgaBlue <= 4'b1111;
-	       end
+           if ((x >= x_low) && ((x_low + box_size) >= x) && (y >= y_low) && ((y_low + box_size) >= y))
+	           begin
+	           vgaRed <= 4'b1111;
+	           vgaGreen <= 4'b1111;
+	           vgaBlue <= 4'b1111;
+	           end
+	       else
+	          begin
+              vgaRed <= 4'b0;
+              vgaBlue <= 4'b0;
+              vgaGreen <= 4'b0;
+              end     
 	   end
 	end
-endmodule    
+endmodule   
