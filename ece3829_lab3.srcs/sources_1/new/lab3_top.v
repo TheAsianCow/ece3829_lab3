@@ -24,6 +24,10 @@ module lab3_top(
     input clk,
     input reset,
     input [7:0] sw,
+    input up_i,
+    input down_i,
+    input left_i,
+    input right_i,
     output dout,
     output sclk,
     output sync,
@@ -54,5 +58,7 @@ module lab3_top(
 //    shift_register_16b dac(.clk(sclk),.clk_100k(clk_100k),.in({8'b00000000,sw}),.dac(dout));
     dac_sawtooth waveform(.clk(sclk),.clk_100k(clk_100k),.reset(reset),.sawtooth_wave(sawtooth));
     shift_register_16b dac(.clk(sclk),.clk_100k(clk_100k),.in({8'b00000000,sawtooth}),.dac(dout));
+    
+    vga_display disp(.up_i(up_i),.down_i(down_i),.left_i(left_i),.right_i(right_i),.clk(clk),.reset(reset),.Hsync(Hsync),.Vsync(Vsync),.vgaRed(vgaRed),.vgaGreen(vgaGreen),.vgaBlue(vgaBlue));
     
 endmodule

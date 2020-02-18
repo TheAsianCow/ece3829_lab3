@@ -26,7 +26,7 @@ module slowclk_1M(
     
     reg [20:0] period_count = 0;
     always @ (posedge clk_in)
-        if (period_count!= 100 - 1)
+        if (period_count!= 100000 - 1)
             begin
             period_count<= period_count + 1;
             clk_out <= 0; //clk_out gets 0.

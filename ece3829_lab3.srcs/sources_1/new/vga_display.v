@@ -27,7 +27,6 @@ module vga_display(
     input right_i,
     input clk,
     input reset,
-    output led,
     output Hsync,
     output Vsync,
     output reg [3:0] vgaRed,
@@ -36,24 +35,23 @@ module vga_display(
     );
     
     wire sclk;
-    wire clk_1M;
+    wire clk_1k;
     
     localparam start = 0, dir_right = 1, dir_left = 2, dir_up = 3, dir_down = 4, other = 5;
     localparam box_size = 32;
     
     vga_clk clk2(.clk_in(clk), .clk_out(sclk));
-    slowclk_1M clk3(.clk_in(clk), .clk_out(clk_1M));
+    slowclk_1M clk3(.clk_in(clk), .clk_out(clk_1k));
     
-    wire [10:0] x;
-    wire [10:0] y;
+    wire [10:0] x,y;
     wire blank;
     
     wire up, down, right, left;
     
-   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset), .clk_en(clk_1M));
-   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset), .clk_en(clk_1M));
-   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset), .clk_en(clk_1M));
-   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset), .clk_en(clk_1M));
+   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset), .clk_en(clk_1k));
+   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset), .clk_en(clk_1k));
+   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset), .clk_en(clk_1k));
+   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset), .clk_en(clk_1k));
 
     //vga stuff
     vga_controller_640_60 display(
