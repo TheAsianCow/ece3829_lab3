@@ -35,13 +35,13 @@ module vga_display(
     output reg [3:0] vgaBlue
     );
     
-    wire sclk;
+    wire sclk_1;
     wire clk_1M;
     
     localparam start = 0, dir_right = 1, dir_left = 2, dir_up = 3, dir_down = 4, other = 5;
     localparam box_size = 32;
     
-    vga_clk clk2(.clk_in(clk), .clk_out(sclk));
+    vga_clk clk2(.clk_in(clk), .clk_out(sclk_1));
     slowclk_1M clk3(.clk_in(clk), .clk_out(clk_1M));
     
     wire [10:0] x;
@@ -50,15 +50,15 @@ module vga_display(
     
     wire up, down, right, left;
     
-   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset), .clk_en(clk_1M));
-   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset), .clk_en(clk_1M));
-   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset), .clk_en(clk_1M));
-   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset), .clk_en(clk_1M));
+   debounce du(.clk(clk_1M), .in(up_i),      .out(up),       .reset(reset));
+   debounce dd(.clk(clk_1M), .in(down_i),    .out(down),     .reset(reset));
+   debounce dr(.clk(clk_1M), .in(right_i),   .out(right),    .reset(reset));
+   debounce dl(.clk(clk_1M), .in(left_i),    .out(left),     .reset(reset));
 
     //vga stuff
     vga_controller_640_60 display(
         .rst(reset), 
-        .pixel_clk(sclk),
+        .pixel_clk(sclk_1),
         .HS(Hsync),
         .VS(Vsync),
         .hcount(y),
@@ -67,79 +67,52 @@ module vga_display(
     );
     
     // bounds for the box
-    reg [9:0] x_low = 10'b0;
-    reg [9:0] y_low = 10'b0;
+    reg [9:0] x_pos = 10'b0;
+    reg [9:0] y_pos = 10'b0;
     
-    reg [2:0] next_state;
-    wire [2:0] state;
-    
-    // which state to go to next
-    always @ (reset, sclk, left, right, up, down)
-    begin
-    if (reset)
-        next_state <= start;
-    else if (up && x_low > 0)
-        next_state <= dir_up;
-    else if (down && x_low + box_size < 480-1)
-        next_state <= dir_down;
-    else if (right && y_low + box_size < 640-1)
-        next_state <= dir_right;  
-    else if (left && y_low > 0)
-        next_state <= dir_left;
-    else
-        next_state <= other; 
-    end
-     
-     assign state = next_state;
-    
-    // direction logic
-    always @ (state)
-    begin
-    case (state)
-    start:
+    always @ (reset, up, down, left, right)
+    if (reset) 
         begin
-        x_low <= 10'b0;
-        y_low <= 10'b0;
+        x_pos = 10'b0;
+        y_pos = 10'b0;
         end
-    dir_down:
-        x_low <= x_low + box_size;
-    dir_up:
-        x_low <= x_low - box_size;
-    dir_left:
-        y_low <= y_low + box_size;
-    dir_right:
-        y_low <= y_low - box_size;
-    default:
+    else if (up && x_pos > 0)
+        x_pos = x_pos - box_size;
+    else if (down && x_pos + box_size < 480-1)
+        x_pos = x_pos + box_size;
+    else if (left && y_pos + box_size < 640-1)
+        y_pos = y_pos + box_size;
+    else if (right && y_pos > 0)
+        y_pos = y_pos - box_size;
+    else
         begin
-        x_low <= x_low;
-        y_low <= y_low;
-        end      
-    endcase
-    end
+        x_pos = x_pos;
+        y_pos = y_pos;
+        end
     
     // logic for drawing out box
-    always @ (clk, y_low, x_low)
+    always @ (blank, y_pos, x_pos, x, y)
     begin
     if (blank) 
         begin
-        vgaRed <= 4'b0;
-        vgaBlue <= 4'b0;
-        vgaGreen <= 4'b0;
+        vgaRed = 4'b0;
+        vgaBlue = 4'b0;
+        vgaGreen = 4'b0;
         end
     else
         begin
-           if ((x >= x_low) && ((x_low + box_size) >= x) && (y >= y_low) && ((y_low + box_size) >= y))
+           if ((x >= x_pos) && ((x_pos + box_size) >= x) && (y >= y_pos) && ((y_pos + box_size) >= y))
 	           begin
-	           vgaRed <= 4'b1111;
-	           vgaGreen <= 4'b1111;
-	           vgaBlue <= 4'b1111;
+	           vgaRed = 4'b1111;
+	           vgaGreen = 4'b1111;
+	           vgaBlue = 4'b1111;
 	           end
 	       else
 	          begin
-              vgaRed <= 4'b0;
-              vgaBlue <= 4'b0;
-              vgaGreen <= 4'b0;
+              vgaRed = 4'b0;
+              vgaBlue = 4'b0;
+              vgaGreen = 4'b0;
               end     
 	   end
-	end
-endmodule   
+	end   
+endmodule
