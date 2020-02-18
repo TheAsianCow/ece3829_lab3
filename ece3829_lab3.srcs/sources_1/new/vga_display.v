@@ -50,10 +50,10 @@ module vga_display(
     
     wire up, down, right, left;
     
-   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset));
-   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset));
-   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset));
-   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset));
+   debounce du(.clk(sclk), .in(up_i),      .out(up),       .reset(reset), .clk_en(clk_1M));
+   debounce dd(.clk(sclk), .in(down_i),    .out(down),     .reset(reset), .clk_en(clk_1M));
+   debounce dr(.clk(sclk), .in(right_i),   .out(right),    .reset(reset), .clk_en(clk_1M));
+   debounce dl(.clk(sclk), .in(left_i),    .out(left),     .reset(reset), .clk_en(clk_1M));
 
     //vga stuff
     vga_controller_640_60 display(
