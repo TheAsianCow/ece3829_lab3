@@ -1,8 +1,14 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 | Tool Version     : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
 | Date             : Tue Feb 18 15:24:13 2020
 | Host             : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
+=======
+| Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date             : Tue Feb 18 16:16:01 2020
+| Host             : ALYSSAUNGERER running 64-bit major release  (build 9200)
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 | Command          : report_power -file vga_display_power_routed.rpt -pb vga_display_power_summary_routed.pb -rpx vga_display_power_routed.rpx
 | Design           : vga_display
 | Device           : xc7a35tcpg236-1
@@ -30,10 +36,17 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
+<<<<<<< HEAD
 | Total On-Chip Power (W)  | 0.074        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.002        |
+=======
+| Total On-Chip Power (W)  | 0.075        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.003        |
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,6 +66,7 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
+<<<<<<< HEAD
 | Slice Logic    |    <0.001 |      370 |       --- |             --- |
 |   LUT as Logic |    <0.001 |      127 |     20800 |            0.61 |
 |   CARRY4       |    <0.001 |       20 |      8150 |            0.25 |
@@ -63,6 +77,18 @@ Table of Contents
 | I/O            |    <0.001 |       21 |       106 |           19.81 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.074 |          |           |                 |
+=======
+| Slice Logic    |     0.001 |      578 |       --- |             --- |
+|   LUT as Logic |     0.001 |      257 |     20800 |            1.24 |
+|   CARRY4       |    <0.001 |       56 |      8150 |            0.69 |
+|   Register     |    <0.001 |      217 |     41600 |            0.52 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       17 |       --- |             --- |
+| Signals        |     0.001 |      477 |       --- |             --- |
+| I/O            |    <0.001 |       21 |       106 |           19.81 |
+| Static Power   |     0.072 |          |           |                 |
+| Total          |     0.075 |          |           |                 |
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +98,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
+<<<<<<< HEAD
 | Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |
+=======
+| Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -141,7 +171,11 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
+<<<<<<< HEAD
 | vga_display |     0.002 |
+=======
+| vga_display |     0.003 |
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 +-------------+-----------+
 
 

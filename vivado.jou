@@ -43,3 +43,4 @@ set_property PROGRAM.FILE {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 close_hw_manager
+update_compile_order -fileset sources_1

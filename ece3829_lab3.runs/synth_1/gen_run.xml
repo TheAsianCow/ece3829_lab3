@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582057322">
+=======
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582060451">
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
   <File Type="PA-TCL" Name="vga_display.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="vga_display_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="vga_display_reports.tcl"/>

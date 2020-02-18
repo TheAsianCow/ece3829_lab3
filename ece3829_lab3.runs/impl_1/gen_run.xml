@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582057322">
+=======
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582060452">
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
   <File Type="BITSTR-BMM" Name="vga_display_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="vga_display_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="vga_display_timing_summary_init.rpt"/>

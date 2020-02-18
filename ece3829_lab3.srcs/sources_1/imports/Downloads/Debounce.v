@@ -1,11 +1,12 @@
 module debounce(
+
     input clk,
     input reset,
-    input clk_en,
     input in,
-    output reg out
+    output out
     );
 
+<<<<<<< HEAD
     parameter zero = 3'b000, zero_to_one = 3'b001, one_wait = 3'b010, one = 3'b011, one_to_zero = 3'b100, zero_wait = 3'b101;
     
     reg [2:0] state, next_state;
@@ -133,5 +134,54 @@ module debounce(
 //        next_state <= zero;
 //    endcase
     
+=======
+    wire cnt_en;
+    reg [1:0] state, next_state;
+    reg [31:0] cnt;
+    parameter [31:0] delay = 30;
+    parameter [1:0] zero = 2'b00, one_pressed = 2'b01, one = 2'b10, transition = 2'b11;
+
+    always @ (posedge clk, posedge reset)
+        if(reset)
+            state <= zero;
+        else
+            state <= next_state;
+            
+    always @ (posedge clk, posedge reset)
+        if(reset)
+            cnt <= 0;
+        else
+            if(cnt_en)
+                if(cnt == delay)
+                    cnt <= 0;
+                else cnt <= cnt + 1;
+            else cnt <= 0;
+
+    assign cnt_en = (state == one_pressed || state == transition);
+
+    always@ (state, in)
+        case(state)
+            zero:
+                if(in)
+                    next_state <= one_pressed;
+                else
+                    next_state <= zero;
+            one_pressed:
+                if(cnt == delay)
+                    next_state <= one;
+                else next_state <= one_pressed;
+            one:
+                next_state <= transition;
+            transition:
+                if(cnt == delay)
+                    next_state <= zero;
+                else next_state <= transition;
+            default:
+                next_state <= zero;
+
+        endcase
+
+    assign out = (state == one);   
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 
 endmodule
