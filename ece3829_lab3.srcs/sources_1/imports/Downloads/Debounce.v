@@ -6,7 +6,6 @@ module debounce(
     output out
     );
 
-<<<<<<< HEAD
     parameter zero = 3'b000, zero_to_one = 3'b001, one_wait = 3'b010, one = 3'b011, one_to_zero = 3'b100, zero_wait = 3'b101;
     
     reg [2:0] state, next_state;
@@ -16,7 +15,7 @@ module debounce(
     wire timeout;
     
     
-    always@(posedge clk_en, posedge reset)begin
+    always@(posedge clk, posedge reset)begin
         if(reset)begin 
             state <= zero; 
             cnt <= 6'b0;
@@ -134,8 +133,7 @@ module debounce(
 //        next_state <= zero;
 //    endcase
     
-=======
-    wire cnt_en;
+   /*  wire cnt_en;
     reg [1:0] state, next_state;
     reg [31:0] cnt;
     parameter [31:0] delay = 30;
@@ -181,7 +179,6 @@ module debounce(
 
         endcase
 
-    assign out = (state == one);   
->>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
+    assign out = (state == one); */   
 
 endmodule
