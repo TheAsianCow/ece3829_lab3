@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582052652">
   <File Type="BITSTR-BMM" Name="lab3_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="lab3_top_methodology_drc_opted.rpt"/>
@@ -68,6 +69,77 @@
   <File Type="RNPI_FILE" Name="lab3_top.rnpi"/>
   <File Type="NPI_FILE" Name="lab3_top.npi"/>
   <File Type="RBD_FILE" Name="lab3_top.rbd"/>
+=======
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582053146">
+  <File Type="BITSTR-BMM" Name="vga_display_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="vga_display_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="vga_display_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="vga_display_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="vga_display.tcl"/>
+  <File Type="OPT-TIMING" Name="vga_display_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="vga_display_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="vga_display_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="vga_display_reports.tcl"/>
+  <File Type="OPT-DRC" Name="vga_display_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="vga_display.hwdef"/>
+  <File Type="PWROPT-DCP" Name="vga_display_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="vga_display_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="vga_display_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="vga_display_placed.dcp"/>
+  <File Type="PLACE-IO" Name="vga_display_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="vga_display_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="vga_display_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="vga_display_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="vga_display_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="vga_display_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="vga_display_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="vga_display_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="vga_display_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="vga_display.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="vga_display_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="vga_display_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="vga_display_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="vga_display.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="vga_display_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="vga_display_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="vga_display_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="vga_display_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="vga_display_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="vga_display_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="vga_display_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="vga_display.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="vga_display_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vga_display_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vga_display_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="vga_display_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="vga_display_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="vga_display_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="vga_display_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="vga_display_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="vga_display_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="vga_display_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="vga_display_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="vga_display_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="vga_display_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="vga_display_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="vga_display_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vga_display_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="vga_display_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="vga_display_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="vga_display_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="vga_display_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="vga_display_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="vga_display.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="vga_display_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="vga_display.rbt"/>
+  <File Type="BITSTR-NKY" Name="vga_display.nky"/>
+  <File Type="PDI-FILE" Name="vga_display.pdi"/>
+  <File Type="RCFI_FILE" Name="vga_display.rcfi"/>
+  <File Type="CFI_FILE" Name="vga_display.cfi"/>
+  <File Type="RNPI_FILE" Name="vga_display.rnpi"/>
+  <File Type="NPI_FILE" Name="vga_display.npi"/>
+  <File Type="RBD_FILE" Name="vga_display.rbd"/>
+>>>>>>> c6dffc4f6bd6d836a1f5aada15b131ecb9952def
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="lab3_top.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="lab3_top.sysdef"/>

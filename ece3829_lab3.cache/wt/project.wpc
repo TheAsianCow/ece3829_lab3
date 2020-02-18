@@ -1,9 +1,14 @@
 version:1
+<<<<<<< HEAD
 57656254616c6b5472616e736d697373696f6e417474656d70746564:66
 67676767:0
 6767676767fff0f:0
 67676767ffffffffffffffffffffffffffffff5b72ffffff622fffffffffffff76fffffffff42:0
 6d6f64655f636f756e7465727c4755494d6f6465:9
+=======
+57656254616c6b5472616e736d697373696f6e417474656d70746564:102
+6d6f64655f636f756e7465727c4755494d6f6465:10
+>>>>>>> c6dffc4f6bd6d836a1f5aada15b131ecb9952def
 79797979:0
 fffffffffffffffffffffffffffffffffffffff0f:0
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0f:0
