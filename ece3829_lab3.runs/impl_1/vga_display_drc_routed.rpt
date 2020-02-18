@@ -1,8 +1,14 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Tue Feb 18 15:24:11 2020
+| Host         : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
+=======
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Tue Feb 18 16:15:59 2020
 | Host         : ALYSSAUNGERER running 64-bit major release  (build 9200)
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 | Command      : report_drc -file vga_display_drc_routed.rpt -pb vga_display_drc_routed.pb -rpx vga_display_drc_routed.rpx
 | Design       : vga_display
 | Device       : xc7a35tcpg236-1
@@ -24,12 +30,20 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
+<<<<<<< HEAD
+             Violations found: 7
+=======
              Violations found: 3
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+<<<<<<< HEAD
+| PDRC-153 | Warning  | Gated clock check                                   | 6          |
+=======
 | PDRC-153 | Warning  | Gated clock check                                   | 2          |
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,12 +63,40 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
+<<<<<<< HEAD
+Net dd/E[0] is a gated clock net sourced by a combinational pin dd/x_low_reg[9]_i_2/O, cell dd/x_low_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+=======
 Net dr/E[0] is a gated clock net sourced by a combinational pin dr/y_pos_reg[9]_i_2/O, cell dr/y_pos_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
+<<<<<<< HEAD
+Net dd/next_state__0 is a gated clock net sourced by a combinational pin dd/FSM_onehot_next_state_reg[5]_i_2__0/O, cell dd/FSM_onehot_next_state_reg[5]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net dl/next_state__0 is a gated clock net sourced by a combinational pin dl/FSM_onehot_next_state_reg[5]_i_2__2/O, cell dl/FSM_onehot_next_state_reg[5]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net dr/next_state__0 is a gated clock net sourced by a combinational pin dr/FSM_onehot_next_state_reg[5]_i_2__1/O, cell dr/FSM_onehot_next_state_reg[5]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net du/E[0] is a gated clock net sourced by a combinational pin du/y_low_reg[9]_i_2/O, cell du/y_low_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net du/next_state__0 is a gated clock net sourced by a combinational pin du/FSM_onehot_next_state_reg[5]_i_2/O, cell du/FSM_onehot_next_state_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+=======
 Net du/E[0] is a gated clock net sourced by a combinational pin du/x_pos_reg[9]_i_2/O, cell du/x_pos_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+>>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 Related violations: <none>
 
 
