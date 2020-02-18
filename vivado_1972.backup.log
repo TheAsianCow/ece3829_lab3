@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Tue Feb 18 13:57:54 2020
+# Process ID: 1972
+# Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2468 C:\Users\Jeffrey Huang\Documents\WPI\2019-2020\C term\ECE3829\ece3829_lab3\ece3829_lab3.xpr
+# Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/vivado.log
+# Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/Downloads/Debounce.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 844.043 ; gain = 188.297
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 18 13:59:01 2020...
