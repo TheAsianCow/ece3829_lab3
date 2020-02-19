@@ -2,26 +2,21 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Wed Feb 19 18:09:42 2020
-# Process ID: 9056
+# Start of session at: Wed Feb 19 18:32:08 2020
+# Process ID: 3764
 # Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15844 C:\Users\Jeffrey Huang\Documents\WPI\2019-2020\C term\ECE3829\ece3829_lab3\ece3829_lab3.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8200 C:\Users\Jeffrey Huang\Documents\WPI\2019-2020\C term\ECE3829\ece3829_lab3\ece3829_lab3.xpr
 # Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/vivado.log
 # Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/alyss/Documents/GitHub/ece3829_lab3' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'clk_wiz_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1065.594 ; gain = 103.336
-update_compile_order -fileset sources_1
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 851.441 ; gain = 205.793
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 18:31:24 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 18:34:56 2020...
