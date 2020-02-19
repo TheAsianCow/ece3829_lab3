@@ -68,24 +68,24 @@ module vga_display(
     reg [9:0] x_pos = 10'b0;
     reg [9:0] y_pos = 10'b0;
     
-    always @ (reset, up_i, down_i, left_i, right_i)
+    always @ (posedge clk_1k, posedge reset)
     if (reset) 
         begin
-        x_pos = 10'b0000000000;
-        y_pos = 10'b0000000000;
+        x_pos <= 10'b0000000000;
+        y_pos <= 10'b0000000000;
         end
     else if (up_i && x_pos > 0)
-        x_pos = x_pos + 10'd32;
+        x_pos <= x_pos + 10'd32;
     else if (down_i && (x_pos < 479-32))
-        x_pos = x_pos - 10'd32;
+        x_pos <= x_pos - 10'd32;
     else if (right_i && (y_pos < 639-32))
-        y_pos = y_pos + 10'd32;
+        y_pos <= y_pos + 10'd32;
     else if (left_i && y_pos > 0)
-        y_pos = y_pos - 10'd32;
+        y_pos <= y_pos - 10'd32;
     else
         begin
-        x_pos = x_pos;
-        y_pos = y_pos;
+        x_pos <= x_pos;
+        y_pos <= y_pos;
         end
     
     // logic for drawing out box

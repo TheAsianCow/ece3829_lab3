@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Feb 18 20:09:58 2020
+| Date             : Wed Feb 19 18:28:46 2020
 | Host             : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_display_power_routed.rpt -pb vga_display_power_summary_routed.pb -rpx vga_display_power_routed.rpx
 | Design           : vga_display
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.073        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.001        |
+| Dynamic (W)              | 0.002        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      190 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       78 |     20800 |            0.38 |
-|   CARRY4       |    <0.001 |       18 |      8150 |            0.22 |
-|   Register     |    <0.001 |       59 |     41600 |            0.14 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |      116 |       --- |             --- |
+| Slice Logic    |    <0.001 |      224 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       82 |     20800 |            0.39 |
+|   CARRY4       |    <0.001 |       24 |      8150 |            0.29 |
+|   Register     |    <0.001 |       81 |     41600 |            0.19 |
+|   Others       |     0.000 |        7 |       --- |             --- |
+| Signals        |    <0.001 |      144 |       --- |             --- |
 | I/O            |    <0.001 |       20 |       106 |           18.87 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |
@@ -140,7 +140,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| vga_display |     0.001 |
+| vga_display |     0.002 |
 +-------------+-----------+
 
 
