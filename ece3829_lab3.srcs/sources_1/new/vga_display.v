@@ -34,13 +34,21 @@ module vga_display(
     output reg [3:0] vgaBlue
     );
     
+<<<<<<< HEAD
     wire vga_clk;
+=======
+    wire sclk_1;
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
     wire clk_1k;
     
     localparam start = 0, dir_right = 1, dir_left = 2, dir_up = 3, dir_down = 4, other = 5;
-    localparam box_size = 32;
+    localparam box_size = 5'b11111;
     
+<<<<<<< HEAD
     vga_clk clk2(.clk_in(clk), .clk_out(vga_clk));
+=======
+    vga_clk clk2(.clk_in(clk), .clk_out(sclk_1));
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
     slowclk_1M clk3(.clk_in(clk), .clk_out(clk_1k));
     
     wire [10:0] x,y;
@@ -68,20 +76,20 @@ module vga_display(
     reg [9:0] x_pos = 10'b0;
     reg [9:0] y_pos = 10'b0;
     
-    always @ (reset, up, down, left, right)
+    always @ (reset, up_i, down_i, left_i, right_i)
     if (reset) 
         begin
-        x_pos = 10'b0;
-        y_pos = 10'b0;
+        x_pos = 10'b0000000000;
+        y_pos = 10'b0000000000;
         end
-    else if (up && x_pos > 0)
-        x_pos = x_pos - box_size;
-    else if (down && x_pos + box_size < 480-1)
-        x_pos = x_pos + box_size;
-    else if (left && y_pos + box_size < 640-1)
-        y_pos = y_pos + box_size;
-    else if (right && y_pos > 0)
-        y_pos = y_pos - box_size;
+    else if (up_i && x_pos > 0)
+        x_pos = x_pos + 10'd32;
+    else if (down_i && (x_pos < 479-32))
+        x_pos = x_pos - 10'd32;
+    else if (right_i && (y_pos < 639-32))
+        y_pos = y_pos + 10'd32;
+    else if (left_i && y_pos > 0)
+        y_pos = y_pos - 10'd32;
     else
         begin
         x_pos = x_pos;
@@ -99,7 +107,7 @@ module vga_display(
         end
     else
         begin
-           if ((x >= x_pos) && ((x_pos + box_size) >= x) && (y >= y_pos) && ((y_pos + box_size) >= y))
+           if ((x >= x_pos) && ((x_pos + 10'd32) >= x) && (y >= y_pos) && ((y_pos + 10'd32) >= y))
 	           begin
 	           vgaRed = 4'b1111;
 	           vgaGreen = 4'b1111;

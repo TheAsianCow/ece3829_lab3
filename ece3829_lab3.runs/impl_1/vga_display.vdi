@@ -1,141 +1,160 @@
 #-----------------------------------------------------------
 # Vivado v2019.2 (64-bit)
+<<<<<<< HEAD
 # SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
 # Start of session at: Tue Feb 18 16:44:11 2020
 # Process ID: 7308
 # Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1
+=======
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb 18 20:08:54 2020
+# Process ID: 10052
+# Current directory: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 # Command line: vivado.exe -log vga_display.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_display.tcl -notrace
-# Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display.vdi
-# Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1\vivado.jou
+# Log file: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display.vdi
+# Journal file: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source vga_display.tcl -notrace
 Command: link_design -top vga_display -part xc7a35tcpg236-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 729.055 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 603.969 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
+<<<<<<< HEAD
 CRITICAL WARNING: [Designutils 20-1280] Could not find module 'clk_wiz_0'. The XDC file c:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc will not be read for any cell of this module.
 CRITICAL WARNING: [Designutils 20-1280] Could not find module 'clk_wiz_0'. The XDC file c:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc will not be read for any cell of this module.
 Parsing XDC File [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
 WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:12]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:12]
+=======
+Parsing XDC File [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:12]
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:13]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:14]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:15]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:16]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:17]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:18]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:19]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:20]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:21]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:22]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:23]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:26]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:27]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:64]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:65]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:66]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:67]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:68]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:69]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:70]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:71]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:73]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:74]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:75]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:76]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:77]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:82]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:82]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:83]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:83]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:84]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:85]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:86]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:87]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:88]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:89]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+<<<<<<< HEAD
 WARNING: [Vivado 12-584] No ports matched 'led'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:92]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:92]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -144,24 +163,35 @@ CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'sync'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:140]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:140]
+=======
+WARNING: [Vivado 12-584] No ports matched 'led'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:92]
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sync'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:141]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'led'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:93]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dout'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:143]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'sync'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:140]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dout'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:144]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'sync'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:141]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sclk'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:146]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'dout'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:143]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sclk'. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:147]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'dout'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:144]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sclk'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk'. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 849.188 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
@@ -169,6 +199,15 @@ No Unisim elements were transformed.
 7 Infos, 46 Warnings, 48 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
 link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 853.199 ; gain = 394.609
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 724.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 46 Warnings, 46 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 728.215 ; gain = 417.535
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -179,6 +218,7 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
+<<<<<<< HEAD
 Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.861 . Memory (MB): peak = 872.176 ; gain = 18.977
 
 Starting Cache Timing Information Task
@@ -186,19 +226,35 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Ending Cache Timing Information Task | Checksum: 85344a16
 
 Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1416.227 ; gain = 544.051
+=======
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.858 . Memory (MB): peak = 746.156 ; gain = 17.941
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1ee90ca68
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1291.852 ; gain = 545.695
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
+<<<<<<< HEAD
 Phase 1 Retarget | Checksum: 85344a16
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Phase 1 Retarget | Checksum: 1ee90ca68
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+<<<<<<< HEAD
 Phase 2 Constant propagation | Checksum: 8b47802f
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1613.445 ; gain = 0.000
@@ -208,19 +264,37 @@ Phase 3 Sweep
 Phase 3 Sweep | Checksum: 8b03d040
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Phase 2 Constant propagation | Checksum: 1780cf47a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1484.918 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1868fe0a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
 INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+<<<<<<< HEAD
 Phase 4 BUFG optimization | Checksum: 8b03d040
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Phase 4 BUFG optimization | Checksum: 1868fe0a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+<<<<<<< HEAD
 Phase 5 Shift Register Optimization | Checksum: 8b03d040
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1613.445 ; gain = 0.000
@@ -230,6 +304,17 @@ Phase 6 Post Processing Netlist
 Phase 6 Post Processing Netlist | Checksum: 8b03d040
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Phase 5 Shift Register Optimization | Checksum: 1868fe0a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1484.918 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1868fe0a6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -250,6 +335,7 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
+<<<<<<< HEAD
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1613.445 ; gain = 0.000
 Ending Logic Optimization Task | Checksum: f7a5f57c
 
@@ -276,18 +362,55 @@ INFO: [Common 17-83] Releasing license: Implementation
 opt_design completed successfully
 opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1613.445 ; gain = 760.246
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14606e266
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 14606e266
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 14606e266
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 14606e266
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.918 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 46 Warnings, 46 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1484.918 ; gain = 756.703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1613.445 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_opt.dcp' has been generated.
+=======
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1484.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_opt.dcp' has been generated.
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [runtcl-4] Executing : report_drc -file vga_display_drc_opted.rpt -pb vga_display_drc_opted.pb -rpx vga_display_drc_opted.rpx
 Command: report_drc -file vga_display_drc_opted.rpt -pb vga_display_drc_opted.pb -rpx vga_display_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
+<<<<<<< HEAD
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_drc_opted.rpt.
+=======
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_drc_opted.rpt.
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 report_drc completed successfully
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -306,6 +429,7 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.445 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 5826b992
 
@@ -330,19 +454,56 @@ Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.909 . Memory (MB): peak = 1613.445
 Phase 1 Placer Initialization | Checksum: 178800f3b
 
 Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.913 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c5649c29
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17e375c05
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.776 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 21c8e0fde
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.910 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 21c8e0fde
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.912 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 21c8e0fde
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.915 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
+<<<<<<< HEAD
 Phase 2.1 Floorplanning | Checksum: cae1a7c8
 
 Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Phase 2.1 Floorplanning | Checksum: 1e2b49352
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 2.2 Global Placement Core
 
 Phase 2.2.1 Physical Synthesis In Placer
+<<<<<<< HEAD
 INFO: [Physopt 32-1018] Found 4 candidate LUT instances to create LUTNM shape
 INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 0 new cell, deleted 2 existing cells and moved 0 existing cell
+=======
+INFO: [Physopt 32-1018] Found 2 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 1 existing cell and moved 0 existing cell
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -352,7 +513,11 @@ INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization wa
 INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -361,13 +526,18 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 |  LUT Combining                                    |            0  |              2  |                     2  |           0  |           1  |  00:00:00  |
+=======
+|  LUT Combining                                    |            0  |              1  |                     1  |           0  |           1  |  00:00:00  |
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+<<<<<<< HEAD
 |  Total                                            |            0  |              2  |                     2  |           0  |           3  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -381,10 +551,26 @@ Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1613.445 ; g
 Phase 2 Global Placement | Checksum: f6f5a743
 
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+|  Total                                            |            0  |              1  |                     1  |           0  |           3  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: ed58ba7e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 189c87a7e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 189c87a7e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
+<<<<<<< HEAD
 Phase 3.1 Commit Multi Column Macros | Checksum: ff67d9c0
 
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1613.445 ; gain = 0.000
@@ -421,6 +607,44 @@ Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1613.445 ; g
 Phase 3 Detail Placement | Checksum: 1a4aee3b7
 
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Phase 3.1 Commit Multi Column Macros | Checksum: 195fd18c9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 17012bdd8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 18f6ff75a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 11847a854
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 2084074e2
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 15db828b9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: d68fd7c3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: d68fd7c3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.918 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -428,6 +652,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
+<<<<<<< HEAD
 Post Placement Optimization Initialization | Checksum: 17343ccab
 
 Phase 4.1.1.1 BUFG Insertion
@@ -468,11 +693,54 @@ INFO: [Common 17-83] Releasing license: Implementation
 57 Infos, 46 Warnings, 48 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Post Placement Optimization Initialization | Checksum: d08ca337
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: d08ca337
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.305. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 10447ba86
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+Phase 4.1 Post Commit Optimization | Checksum: 10447ba86
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 10447ba86
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 10447ba86
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1487.715 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 170bc18b0
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 170bc18b0
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+Ending Placer Task | Checksum: 115324392
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1487.715 ; gain = 2.797
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 46 Warnings, 46 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1487.715 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1613.445 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file vga_display_io_placed.rpt
@@ -480,22 +748,42 @@ report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak
 INFO: [runtcl-4] Executing : report_utilization -file vga_display_utilization_placed.rpt -pb vga_display_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file vga_display_control_sets_placed.rpt
 report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1613.445 ; gain = 0.000
+=======
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1487.719 ; gain = 0.004
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file vga_display_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1487.719 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file vga_display_utilization_placed.rpt -pb vga_display_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file vga_display_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1487.719 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
+<<<<<<< HEAD
 66 Infos, 46 Warnings, 48 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1626.750 ; gain = 0.000
+=======
+68 Infos, 46 Warnings, 46 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1502.203 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1644.621 ; gain = 17.871
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_physopt.dcp' has been generated.
+=======
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1520.074 ; gain = 17.871
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_physopt.dcp' has been generated.
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -507,6 +795,7 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+<<<<<<< HEAD
 Checksum: PlaceDB: c6572dd4 ConstDB: 0 ShapeSum: 964d76e0 RouteDB: 0
 
 Phase 1 Build RT Design
@@ -514,10 +803,20 @@ Phase 1 Build RT Design | Checksum: 5faa46da
 
 Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 1725.164 ; gain = 68.512
 Post Restoration Checksum: NetGraph: 461ca075 NumContArr: 198da665 Constraints: 0 Timing: 0
+=======
+Checksum: PlaceDB: 4b911c46 ConstDB: 0 ShapeSum: c9a1274c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 104409491
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1602.574 ; gain = 70.504
+Post Restoration Checksum: NetGraph: d5f87548 NumContArr: 2e481f49 Constraints: 0 Timing: 0
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
+<<<<<<< HEAD
 Phase 2.1 Create Timer | Checksum: 5faa46da
 
 Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 1725.164 ; gain = 68.512
@@ -560,10 +859,55 @@ Phase 3 Initial Routing
 Phase 3 Initial Routing | Checksum: 12bc25dc1
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1736.492 ; gain = 79.840
+=======
+Phase 2.1 Create Timer | Checksum: 104409491
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1602.574 ; gain = 70.504
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 104409491
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1608.457 ; gain = 76.387
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 104409491
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1608.457 ; gain = 76.387
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 166d3eacb
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1611.863 ; gain = 79.793
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.285  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+Phase 2 Router Initialization | Checksum: 126fe7264
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1611.863 ; gain = 79.793
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0169816 %
+  Global Horizontal Routing Utilization  = 0.00299323 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 109
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 92
+  Number of Partially Routed Nets     = 17
+  Number of Node Overlaps             = 26
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 16e22d7e2
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
+<<<<<<< HEAD
  Number of Nodes with overlaps = 12
  Number of Nodes with overlaps = 0
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.873  | TNS=0.000  | WHS=N/A    | THS=N/A    |
@@ -574,10 +918,23 @@ Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1736.492 ; g
 Phase 4 Rip-up And Reroute | Checksum: 1386cce02
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1736.492 ; gain = 79.840
+=======
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.618  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: bc20812e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+Phase 4 Rip-up And Reroute | Checksum: bc20812e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
+<<<<<<< HEAD
 Phase 5.1 Delay CleanUp | Checksum: 1386cce02
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1736.492 ; gain = 79.840
@@ -589,12 +946,26 @@ Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1736.492 ; g
 Phase 5 Delay and Skew Optimization | Checksum: 1386cce02
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1736.492 ; gain = 79.840
+=======
+Phase 5.1 Delay CleanUp | Checksum: bc20812e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: bc20812e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+Phase 5 Delay and Skew Optimization | Checksum: bc20812e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
+<<<<<<< HEAD
 Phase 6.1.1 Update Timing | Checksum: 13e0f6874
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1736.496 ; gain = 79.844
@@ -606,12 +977,30 @@ Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1736.496 ; g
 Phase 6 Post Hold Fix | Checksum: 13e0f6874
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1736.496 ; gain = 79.844
+=======
+Phase 6.1.1 Update Timing | Checksum: 18371c490
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.710  | TNS=0.000  | WHS=0.322  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 18371c490
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+Phase 6 Post Hold Fix | Checksum: 18371c490
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 7 Route finalize
 
 Router Utilization Summary
+<<<<<<< HEAD
   Global Vertical Routing Utilization    = 0.0243961 %
   Global Horizontal Routing Utilization  = 0.024076 %
+=======
+  Global Vertical Routing Utilization    = 0.0309336 %
+  Global Horizontal Routing Utilization  = 0.0260281 %
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -621,13 +1010,20 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
+<<<<<<< HEAD
 Phase 7 Route finalize | Checksum: 13e0f6874
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1736.496 ; gain = 79.844
+=======
+Phase 7 Route finalize | Checksum: 18371c490
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.328 ; gain = 81.258
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
+<<<<<<< HEAD
 Phase 8 Verifying routed nets | Checksum: 13e0f6874
 
 Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1738.504 ; gain = 81.852
@@ -654,24 +1050,65 @@ INFO: [Common 17-83] Releasing license: Implementation
 route_design completed successfully
 route_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1738.504 ; gain = 93.883
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1738.504 ; gain = 0.000
+=======
+Phase 8 Verifying routed nets | Checksum: 18371c490
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1615.336 ; gain = 83.266
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 14175b776
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1615.336 ; gain = 83.266
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.710  | TNS=0.000  | WHS=0.322  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 14175b776
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1615.336 ; gain = 83.266
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1615.336 ; gain = 83.266
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+82 Infos, 46 Warnings, 46 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1615.336 ; gain = 95.262
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1615.336 ; gain = 0.000
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1748.383 ; gain = 9.879
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_routed.dcp' has been generated.
+=======
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1625.211 ; gain = 9.875
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_routed.dcp' has been generated.
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [runtcl-4] Executing : report_drc -file vga_display_drc_routed.rpt -pb vga_display_drc_routed.pb -rpx vga_display_drc_routed.rpx
 Command: report_drc -file vga_display_drc_routed.rpt -pb vga_display_drc_routed.pb -rpx vga_display_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
+<<<<<<< HEAD
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_drc_routed.rpt.
+=======
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_drc_routed.rpt.
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file vga_display_methodology_drc_routed.rpt -pb vga_display_methodology_drc_routed.pb -rpx vga_display_methodology_drc_routed.rpx
 Command: report_methodology -file vga_display_methodology_drc_routed.rpt -pb vga_display_methodology_drc_routed.pb -rpx vga_display_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
+<<<<<<< HEAD
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_methodology_drc_routed.rpt.
+=======
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/vga_display_methodology_drc_routed.rpt.
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file vga_display_power_routed.rpt -pb vga_display_power_summary_routed.pb -rpx vga_display_power_routed.rpx
 Command: report_power -file vga_display_power_routed.rpt -pb vga_display_power_summary_routed.pb -rpx vga_display_power_routed.rpx
@@ -679,7 +1116,11 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
+<<<<<<< HEAD
 92 Infos, 46 Warnings, 48 Critical Warnings and 0 Errors encountered.
+=======
+94 Infos, 46 Warnings, 46 Critical Warnings and 0 Errors encountered.
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file vga_display_route_status.rpt -pb vga_display_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file vga_display_timing_summary_routed.rpt -pb vga_display_timing_summary_routed.pb -rpx vga_display_timing_summary_routed.rpx -warn_on_violation 
@@ -706,6 +1147,7 @@ WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Nei
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+<<<<<<< HEAD
 WARNING: [DRC PDRC-153] Gated clock check: Net dd/next_state__0 is a gated clock net sourced by a combinational pin dd/FSM_onehot_next_state_reg[5]_i_2/O, cell dd/FSM_onehot_next_state_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net dl/next_state__0 is a gated clock net sourced by a combinational pin dl/FSM_onehot_next_state_reg[5]_i_2__1/O, cell dl/FSM_onehot_next_state_reg[5]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net dr/E[0] is a gated clock net sourced by a combinational pin dr/y_pos_reg[9]_i_2/O, cell dr/y_pos_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
@@ -713,6 +1155,11 @@ WARNING: [DRC PDRC-153] Gated clock check: Net dr/next_state__0 is a gated clock
 WARNING: [DRC PDRC-153] Gated clock check: Net du/E[0] is a gated clock net sourced by a combinational pin du/x_pos_reg[9]_i_2/O, cell du/x_pos_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net du/next_state__0 is a gated clock net sourced by a combinational pin du/FSM_onehot_next_state_reg[5]_i_2__0/O, cell du/FSM_onehot_next_state_reg[5]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 7 Warnings
+=======
+WARNING: [DRC PDRC-153] Gated clock check: Net x_pos_reg[9]_i_2_n_0 is a gated clock net sourced by a combinational pin x_pos_reg[9]_i_2/O, cell x_pos_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net y_pos__0 is a gated clock net sourced by a combinational pin y_pos_reg[9]_i_2/O, cell y_pos_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 3 Warnings
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -724,8 +1171,17 @@ Creating bitstream...
 Writing bitstream ./vga_display.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+<<<<<<< HEAD
 INFO: [Common 17-83] Releasing license: Implementation
 111 Infos, 53 Warnings, 48 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 2189.652 ; gain = 407.281
 INFO: [Common 17-206] Exiting Vivado at Tue Feb 18 16:45:35 2020...
+=======
+INFO: [Common 17-186] 'C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Feb 18 20:10:13 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+114 Infos, 49 Warnings, 46 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2059.668 ; gain = 399.469
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 18 20:10:13 2020...
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f

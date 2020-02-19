@@ -1,8 +1,14 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
 | Date         : Tue Feb 18 16:45:20 2020
 | Host         : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
+=======
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Feb 18 20:09:58 2020
+| Host         : ALYSSAUNGERER running 64-bit major release  (build 9200)
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 | Command      : report_methodology -file vga_display_methodology_drc_routed.rpt -pb vga_display_methodology_drc_routed.pb -rpx vga_display_methodology_drc_routed.rpx
 | Design       : vga_display
 | Device       : xc7a35tcpg236-1
@@ -23,28 +29,46 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
+<<<<<<< HEAD
              Violations found: 80
 +-----------+------------------+-----------------------------+------------+
 | Rule      | Severity         | Description                 | Violations |
 +-----------+------------------+-----------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell | 44         |
 | TIMING-20 | Warning          | Non-clocked latch           | 36         |
+=======
+             Violations found: 37
++-----------+------------------+-----------------------------+------------+
+| Rule      | Severity         | Description                 | Violations |
++-----------+------------------+-----------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 25         |
+| TIMING-20 | Warning          | Non-clocked latch           | 12         |
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 +-----------+------------------+-----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 TIMING-17#1 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
 The clock pin dd/FSM_onehot_state_reg[0]/C is not reached by a timing clock
+=======
+The clock pin display/HS_reg/C is not reached by a timing clock
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Related violations: <none>
 
 TIMING-17#2 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
 The clock pin dd/FSM_onehot_state_reg[1]/C is not reached by a timing clock
+=======
+The clock pin display/VS_reg/C is not reached by a timing clock
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Related violations: <none>
 
 TIMING-17#3 Critical Warning
 Non-clocked sequential cell  
+<<<<<<< HEAD
 The clock pin dd/FSM_onehot_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
@@ -251,10 +275,124 @@ Related violations: <none>
 TIMING-17#44 Critical Warning
 Non-clocked sequential cell  
 The clock pin du/cnt_reg[4]/C is not reached by a timing clock
+=======
+The clock pin display/blank_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/hcounter_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin display/vcounter_reg[9]/C is not reached by a timing clock
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
+<<<<<<< HEAD
 The latch dd/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin dd/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
@@ -375,6 +513,8 @@ Related violations: <none>
 
 TIMING-20#25 Warning
 Non-clocked latch  
+=======
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
 The latch x_pos_reg[4] cannot be properly analyzed as its control pin x_pos_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 

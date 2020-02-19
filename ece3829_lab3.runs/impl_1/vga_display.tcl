@@ -65,19 +65,28 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+<<<<<<< HEAD
   set_param chipscope.maxJobs 2
+=======
+  set_param chipscope.maxJobs 1
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.cache/wt [current_project]
+  set_property parent.project_path C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.xpr [current_project]
+  set_property ip_output_repo C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+<<<<<<< HEAD
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/vga_display.dcp}}
   read_ip -quiet {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
   read_xdc {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc}}
+=======
+  add_files -quiet C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1/vga_display.dcp
+  read_xdc C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc
+>>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
   link_design -top vga_display -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
