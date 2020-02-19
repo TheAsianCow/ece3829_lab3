@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Feb 19 18:27:43 2020
+| Date         : Wed Feb 19 18:34:16 2020
 | Host         : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command      : report_utilization -file vga_display_utilization_synth.rpt -pb vga_display_utilization_synth.pb
 | Design       : vga_display
@@ -157,7 +157,7 @@ Table of Contents
 | LUT5     |   17 |                 LUT |
 | OBUF     |   14 |                  IO |
 | FDCE     |   12 |        Flop & Latch |
-| LUT1     |    8 |                 LUT |
+| LUT1     |    9 |                 LUT |
 | LUT3     |    6 |                 LUT |
 | IBUF     |    6 |                  IO |
 | BUFG     |    1 |               Clock |

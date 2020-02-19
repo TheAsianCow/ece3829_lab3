@@ -75,9 +75,9 @@ module vga_display(
         y_pos <= 10'b0000000000;
         end
     else if (up_i && x_pos > 0)
-        x_pos <= x_pos + 10'd32;
-    else if (down_i && (x_pos < 479-32))
         x_pos <= x_pos - 10'd32;
+    else if (down_i && (x_pos < 479-32))
+        x_pos <= x_pos + 10'd32;
     else if (right_i && (y_pos < 639-32))
         y_pos <= y_pos + 10'd32;
     else if (left_i && y_pos > 0)
