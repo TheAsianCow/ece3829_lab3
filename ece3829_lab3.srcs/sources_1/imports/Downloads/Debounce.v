@@ -1,9 +1,8 @@
 module debounce(
-
     input clk,
     input reset,
     input in,
-    output out
+    output reg out
     );
 
     parameter zero = 3'b000, zero_to_one = 3'b001, one_wait = 3'b010, one = 3'b011, one_to_zero = 3'b100, zero_wait = 3'b101;

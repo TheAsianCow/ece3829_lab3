@@ -34,13 +34,13 @@ module vga_display(
     output reg [3:0] vgaBlue
     );
     
-    wire sclk;
+    wire vga_clk;
     wire clk_1k;
     
     localparam start = 0, dir_right = 1, dir_left = 2, dir_up = 3, dir_down = 4, other = 5;
     localparam box_size = 32;
     
-    vga_clk clk2(.clk_in(clk), .clk_out(sclk));
+    vga_clk clk2(.clk_in(clk), .clk_out(vga_clk));
     slowclk_1M clk3(.clk_in(clk), .clk_out(clk_1k));
     
     wire [10:0] x,y;
@@ -56,7 +56,7 @@ module vga_display(
     //vga stuff
     vga_controller_640_60 display(
         .rst(reset), 
-        .pixel_clk(sclk_1),
+        .pixel_clk(vga_clk),
         .HS(Hsync),
         .VS(Vsync),
         .hcount(y),
