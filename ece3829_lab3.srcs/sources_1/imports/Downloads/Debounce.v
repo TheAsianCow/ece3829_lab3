@@ -1,5 +1,4 @@
 module debounce(
-
     input clk,
     input reset,
     input in,
