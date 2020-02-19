@@ -1,20 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2019.2 (64-bit)
-<<<<<<< HEAD
-# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
-# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Tue Feb 18 15:22:05 2020
-# Process ID: 208
-# Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1
-=======
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Feb 18 16:14:14 2020
-# Process ID: 18800
+# Start of session at: Tue Feb 18 20:08:08 2020
+# Process ID: 9600
 # Current directory: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1
->>>>>>> e3834aecd696025270bb60e38e83d03628e73a46
 # Command line: vivado.exe -log vga_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_display.tcl
-# Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/vga_display.vds
-# Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1\vivado.jou
+# Log file: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1/vga_display.vds
+# Journal file: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source vga_display.tcl -notrace
