@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Wed Feb 19 18:28:20 2020
+| Date                      : Wed Feb 19 18:34:54 2020
 | Host                      : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command                   : report_io -file vga_display_io_placed.rpt
 | Design                    : vga_display
