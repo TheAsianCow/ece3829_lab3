@@ -3,17 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<<<<<<< HEAD
-<application name="pa" timeStamp="Wed Feb 19 18:01:34 2020">
+<application name="pa" timeStamp="Wed Feb 19 18:31:22 2020">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="b2f2a7ee60a04fec95ba43bedb0fc90a" type="ProjectID"/>
-<property name="ProjectIteration" value="4" type="ProjectIteration"/>
-=======
-<application name="pa" timeStamp="Tue Feb 18 20:08:05 2020">
-<section name="Project Information" visible="false">
-<property name="ProjectID" value="9d522edc31d440aeac9957089e925536" type="ProjectID"/>
-<property name="ProjectIteration" value="38" type="ProjectIteration"/>
->>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
+<property name="ProjectID" value="2926b4b43fda44748ea2c5927722ac8c" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -23,68 +16,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
-<item name="Java Command Handlers">
-<property name="AutoConnectTarget" value="2" type="JavaHandler"/>
-<<<<<<< HEAD
-<property name="CloseProject" value="1" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="3" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="3" type="JavaHandler"/>
-<property name="OpenRecentTarget" value="4" type="JavaHandler"/>
-<property name="ProgramDevice" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="3" type="JavaHandler"/>
-<property name="SetTopNode" value="1" type="JavaHandler"/>
-</item>
 <item name="Gui Handlers">
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="36" type="GuiHandlerData"/>
-<property name="FileSetPanel_RELOAD" value="7" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="12" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_CONNECT_TARGET" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="9" type="GuiHandlerData"/>
-<property name="PACommandNames_SET_AS_TOP" value="1" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="2" type="GuiHandlerData"/>
-<property name="ProgramDebugTab_PROGRAM_DEVICE" value="2" type="GuiHandlerData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="3" type="GuiHandlerData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="2" type="GuiHandlerData"/>
-<property name="SrcMenu_REFRESH_HIERARCHY" value="4" type="GuiHandlerData"/>
-<property name="TaskBanner_CLOSE" value="2" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="10" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="50" type="GuiMode"/>
+<property name="GuiMode" value="53" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="41" type="TclMode"/>
-=======
-<property name="EditUndo" value="1" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="41" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="37" type="JavaHandler"/>
-<property name="OpenRecentTarget" value="3" type="JavaHandler"/>
-<property name="ProgramDevice" value="51" type="JavaHandler"/>
-<property name="RunBitgen" value="43" type="JavaHandler"/>
-<property name="ShowView" value="12" type="JavaHandler"/>
-<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
-<property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
-</item>
-<item name="Gui Handlers">
-<property name="BaseDialog_CANCEL" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="17" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="37" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="21" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="107" type="GuiHandlerData"/>
-<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="7" type="GuiHandlerData"/>
-<property name="MsgView_CRITICAL_WARNINGS" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_CONNECT_TARGET" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_OPEN_HARDWARE_MANAGER" value="2" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="1" type="GuiHandlerData"/>
-<property name="PAViews_DEVICE" value="1" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="4" type="GuiHandlerData"/>
-<property name="ProgramDebugTab_OPEN_TARGET" value="2" type="GuiHandlerData"/>
-<property name="ProgramDebugTab_PROGRAM_DEVICE" value="7" type="GuiHandlerData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="38" type="GuiHandlerData"/>
-<property name="RDICommands_COPY" value="1" type="GuiHandlerData"/>
-<property name="RDICommands_LINE_COMMENT" value="8" type="GuiHandlerData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="3" type="GuiHandlerData"/>
-<property name="TaskBanner_CLOSE" value="1" type="GuiHandlerData"/>
->>>>>>> e3476fac0acbb45e280e0c5af85b50753f28473f
+<property name="TclMode" value="44" type="TclMode"/>
 </item>
 </section>
 </application>
