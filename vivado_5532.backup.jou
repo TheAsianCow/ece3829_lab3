@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Tue Feb 18 16:29:33 2020
+# Process ID: 5532
+# Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14584 C:\Users\Jeffrey Huang\Documents\WPI\2019-2020\C term\ECE3829\ece3829_lab3\ece3829_lab3.xpr
+# Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/vivado.log
+# Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.xpr}
+set_property source_mgmt_mode None [current_project]
