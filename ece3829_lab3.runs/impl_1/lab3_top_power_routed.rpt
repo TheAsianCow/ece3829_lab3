@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date             : Wed Feb 19 20:47:30 2020
+| Date             : Wed Feb 19 21:17:19 2020
 | Host             : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
 | Command          : report_power -file lab3_top_power_routed.rpt -pb lab3_top_power_summary_routed.pb -rpx lab3_top_power_routed.rpx
 | Design           : lab3_top
@@ -53,10 +53,10 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      348 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      118 |     20800 |            0.57 |
+| Slice Logic    |    <0.001 |      344 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      117 |     20800 |            0.56 |
 |   CARRY4       |    <0.001 |       30 |      8150 |            0.37 |
-|   Register     |    <0.001 |      139 |     41600 |            0.33 |
+|   Register     |    <0.001 |      137 |     41600 |            0.33 |
 |   Others       |     0.000 |       20 |       --- |             --- |
 | Signals        |    <0.001 |      228 |       --- |             --- |
 | MMCM           |     0.106 |        1 |         5 |           20.00 |

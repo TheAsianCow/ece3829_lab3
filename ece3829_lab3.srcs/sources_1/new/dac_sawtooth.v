@@ -31,7 +31,7 @@ module dac_sawtooth(
     reg state, next_state;
     reg [7:0] count, next_count;
     
-    always@(posedge clk_100k, posedge reset)begin
+    always@(negedge clk_100k, posedge reset)begin
         if(reset)begin
             state <= res;
             count <= 0;
@@ -49,8 +49,8 @@ module dac_sawtooth(
                 next_state = step;
             end
             step: begin
-                next_count = count+3;
-                if((count+3)>=128) next_state = res;
+                next_count = count+2;
+                if((count+2)>=128) next_state = res;
                 else next_state = step;
             end
         endcase

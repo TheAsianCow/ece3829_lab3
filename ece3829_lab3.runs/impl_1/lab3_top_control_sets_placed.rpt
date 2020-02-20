@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Wed Feb 19 20:47:01 2020
+| Date         : Wed Feb 19 21:16:51 2020
 | Host         : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab3_top_control_sets_placed.rpt
 | Design       : lab3_top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    18 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    77 |
+| Unused register locations in slices containing registers |    71 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -42,8 +42,8 @@ Table of Contents
 | Total control sets |    18 |
 | >= 0 to < 4        |     7 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     3 |
-| >= 8 to < 10       |     3 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     2 |
 | >= 10 to < 12      |     2 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              14 |            7 |
-| No           | No                    | Yes                    |              10 |            3 |
-| No           | Yes                   | No                     |              91 |           25 |
+| No           | No                    | No                     |              13 |            7 |
+| No           | No                    | Yes                    |               9 |            3 |
+| No           | Yes                   | No                     |              91 |           27 |
 | Yes          | No                    | No                     |               1 |            1 |
 | Yes          | No                    | Yes                    |              12 |            4 |
-| Yes          | Yes                   | No                     |              11 |            2 |
+| Yes          | Yes                   | No                     |              11 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,21 +73,21 @@ Table of Contents
 +-----------------------------+----------------------------+------------------------------------------+------------------+----------------+
 |         Clock Signal        |        Enable Signal       |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
 +-----------------------------+----------------------------+------------------------------------------+------------------+----------------+
+|  instance_name/inst/clk_10M | clk0/period_count_reg[5]_0 |                                          |                1 |              1 |
 |  disp/clk3/CLK              |                            | reset_IBUF                               |                1 |              1 |
 |  disp/clk2/clk_out_reg_0    |                            |                                          |                1 |              1 |
 |  disp/clk2/clk_out_reg_0    |                            | disp/display/VS0                         |                1 |              1 |
 |  disp/clk2/clk_out_reg_0    |                            | disp/display/HS0                         |                1 |              1 |
-|  instance_name/inst/clk_10M | clk0/period_count_reg[5]_0 |                                          |                1 |              1 |
 |  seven_seg_clk/CLK          |                            |                                          |                1 |              2 |
 |  clk_IBUF_BUFG              |                            |                                          |                3 |              3 |
-|  disp/clk3/CLK              | disp/y_pos                 | reset_IBUF                               |                2 |              6 |
 |  disp/clk3/CLK              | disp/x_pos[9]_i_1_n_0      | reset_IBUF                               |                2 |              6 |
-|  instance_name/inst/clk_10M |                            | clk0/clear                               |                1 |              7 |
-|  instance_name/inst/clk_10M |                            |                                          |                2 |              8 |
+|  disp/clk3/CLK              | disp/y_pos                 | reset_IBUF                               |                2 |              6 |
+|  instance_name/inst/clk_10M |                            |                                          |                2 |              7 |
+|  instance_name/inst/clk_10M |                            | clk0/clear                               |                2 |              7 |
 |  instance_name/inst/clk_10M |                            | clk0/sync_OBUF                           |                2 |              8 |
-|  clk0/sync_OBUF             |                            | reset_IBUF                               |                2 |              9 |
-|  disp/clk2/clk_out_reg_0    |                            | disp/display/hcounter[10]_i_1_n_0        |                2 |             11 |
-|  disp/clk2/clk_out_reg_0    | disp/display/eqOp          | disp/display/vcounter[10]_i_1_n_0        |                2 |             11 |
+| ~clk0/sync_OBUF             |                            | reset_IBUF                               |                2 |              8 |
+|  disp/clk2/clk_out_reg_0    |                            | disp/display/hcounter[10]_i_1_n_0        |                3 |             11 |
+|  disp/clk2/clk_out_reg_0    | disp/display/eqOp          | disp/display/vcounter[10]_i_1_n_0        |                3 |             11 |
 |  clk_IBUF_BUFG              |                            | seven_seg_clk/period_count[0]_i_1__0_n_0 |                6 |             21 |
 |  clk_IBUF_BUFG              |                            | disp/clk3/period_count[0]_i_1__2_n_0     |                6 |             21 |
 |  clk_IBUF_BUFG              |                            | disp/clk2/period_count[0]_i_1__1_n_0     |                6 |             21 |
