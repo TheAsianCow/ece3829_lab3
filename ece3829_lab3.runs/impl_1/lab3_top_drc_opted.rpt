@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Feb 19 21:32:11 2020
+| Date         : Wed Feb 19 22:03:25 2020
 | Host         : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command      : report_drc -file lab3_top_drc_opted.rpt -pb lab3_top_drc_opted.pb -rpx lab3_top_drc_opted.rpx
 | Design       : lab3_top
@@ -49,7 +49,7 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT clk0/dac_i_1 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
+A LUT clk0/sync_OBUF_inst_i_1 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
 waveform/count_reg[0], waveform/count_reg[1], waveform/count_reg[2], waveform/count_reg[3], waveform/count_reg[4], waveform/count_reg[5], waveform/count_reg[6], waveform/count_reg[7], waveform/state_reg
 Related violations: <none>
 
