@@ -24,7 +24,7 @@
 
 
 module seven_seg(
-    input [7:0] in,
+    input [15:0] in,
     input clk,
     output [6:0] seg,
     output [3:0] an);

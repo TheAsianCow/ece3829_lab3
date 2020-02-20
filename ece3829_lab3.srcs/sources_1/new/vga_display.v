@@ -47,6 +47,7 @@ module vga_display(
     wire blank;
     
     wire up, down, right, left;
+    reg pressed = 0;
     
    debounce du(.clk(clk_1k), .in(up_i),      .out(up),       .reset(reset));
    debounce dd(.clk(clk_1k), .in(down_i),    .out(down),     .reset(reset));
@@ -73,19 +74,30 @@ module vga_display(
         begin
         x_pos <= 10'b0000000000;
         y_pos <= 10'b0000000000;
+        pressed <= 0;
         end
-    else if (up_i && x_pos > 0)
+    else if (up_i && x_pos > 0 && !pressed)begin
         x_pos <= x_pos - 10'd32;
-    else if (down_i && (x_pos < 479-32))
+        pressed <= 1;
+    end
+    else if (down_i && (x_pos < 479-32) && !pressed)begin
         x_pos <= x_pos + 10'd32;
-    else if (right_i && (y_pos < 639-32))
+        pressed <= 1;
+    end
+    else if (right_i && (y_pos < 639-32) && !pressed)begin
         y_pos <= y_pos + 10'd32;
-    else if (left_i && y_pos > 0)
+        pressed <= 1;
+    end
+    else if (left_i && y_pos > 0 && !pressed)begin
         y_pos <= y_pos - 10'd32;
+        pressed <= 1;
+    end
+    else if(!left_i && !right_i && !up_i && !down_i) pressed <= 0;
     else
         begin
         x_pos <= x_pos;
         y_pos <= y_pos;
+        pressed <= pressed;
         end
     
     // logic for drawing out box

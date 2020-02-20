@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f0545adef0d842a7a625733d625a4af8"/>
@@ -67,8 +67,44 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/imports/new/bcd7seg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/imports/new/bcd7seg.v"/>
+          <Attr Name="ImportTime" Val="1580847994"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/dac_sawtooth.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/imports/new/decoder2to4.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/decoder2to4.v"/>
+          <Attr Name="ImportTime" Val="1580847994"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/imports/new/my_counter.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/my_counter.v"/>
+          <Attr Name="ImportTime" Val="1580847994"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/new/seven_seg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/new/seven_seg.v"/>
+          <Attr Name="ImportTime" Val="1580850723"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -90,6 +126,15 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/slowclk_1M.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/slowclock.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/slowclock.v"/>
+          <Attr Name="ImportTime" Val="1580848259"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -124,56 +169,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/imports/new/bcd7seg.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/imports/new/bcd7seg.v"/>
-          <Attr Name="ImportTime" Val="1580847994"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/new/decoder2to4.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/decoder2to4.v"/>
-          <Attr Name="ImportTime" Val="1580847994"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/new/my_counter.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/my_counter.v"/>
-          <Attr Name="ImportTime" Val="1580847994"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/new/seven_seg.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/new/seven_seg.v"/>
-          <Attr Name="ImportTime" Val="1580850723"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/slowclock.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/slowclock.v"/>
-          <Attr Name="ImportTime" Val="1580848259"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="lab3_top"/>
@@ -196,7 +191,7 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="seven_seg"/>
+        <Option Name="TopModule" Val="lab3_top"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>

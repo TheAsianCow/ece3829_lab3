@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1'
+HD_PWD='C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log lab3_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source lab3_top.tcl -notrace
 
 
