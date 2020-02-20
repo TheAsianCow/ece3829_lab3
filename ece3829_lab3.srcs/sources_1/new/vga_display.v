@@ -31,7 +31,8 @@ module vga_display(
     output Vsync,
     output reg [3:0] vgaRed,
     output reg [3:0] vgaGreen,
-    output reg [3:0] vgaBlue
+    output reg [3:0] vgaBlue,
+    output [3:0] x_pos_t, x_pos_o, y_pos_t, y_pos_o
     );
     
     wire vga_clk;
@@ -66,33 +67,33 @@ module vga_display(
     );
     
     // bounds for the box
-    reg [9:0] x_pos = 10'b0;
-    reg [9:0] y_pos = 10'b0;
+    reg [7:0] x_pos = 8'b0;
+    reg [7:0] y_pos = 8'b0;
     
     always @ (posedge clk_1k, posedge reset)
     if (reset) 
         begin
-        x_pos <= 10'b0000000000;
-        y_pos <= 10'b0000000000;
+        x_pos <= 8'b0;
+        y_pos <= 8'b0;
         pressed <= 0;
         end
-    else if (up_i && x_pos > 0 && !pressed)begin
-        x_pos <= x_pos - 10'd32;
+    else if (up && x_pos > 0 && !pressed)begin
+        x_pos <= x_pos - 1'b1;
         pressed <= 1;
     end
-    else if (down_i && (x_pos < 479-32) && !pressed)begin
-        x_pos <= x_pos + 10'd32;
+    else if (down && (x_pos < 14) && !pressed)begin
+        x_pos <= x_pos + 1'b1;
         pressed <= 1;
     end
-    else if (right_i && (y_pos < 639-32) && !pressed)begin
-        y_pos <= y_pos + 10'd32;
+    else if (right && (y_pos < 19) && !pressed)begin
+        y_pos <= y_pos + 1'b1;
         pressed <= 1;
     end
-    else if (left_i && y_pos > 0 && !pressed)begin
-        y_pos <= y_pos - 10'd32;
+    else if (left && y_pos > 0 && !pressed)begin
+        y_pos <= y_pos - 1'b1;
         pressed <= 1;
     end
-    else if(!left_i && !right_i && !up_i && !down_i) pressed <= 0;
+    else if(!left && !right && !up && !down) pressed <= 0;
     else
         begin
         x_pos <= x_pos;
@@ -111,7 +112,7 @@ module vga_display(
         end
     else
         begin
-           if ((x >= x_pos) && ((x_pos + 10'd32) >= x) && (y >= y_pos) && ((y_pos + 10'd32) >= y))
+           if ((x >= x_pos * 10'd32) && (((x_pos + 1) * 10'd32) >= x) && (y >= y_pos * 10'd32) && (((y_pos + 1) * 10'd32) >= y))
 	           begin
 	           vgaRed = 4'b1111;
 	           vgaGreen = 4'b1111;
@@ -125,4 +126,9 @@ module vga_display(
               end     
 	   end
 	end   
+	
+	assign x_pos_t = x_pos >= 10 ? 4'b0001 : 4'b0000;
+    assign x_pos_o = x_pos >= 10 ? x_pos - 10 : x_pos[3:0];
+    assign y_pos_t = y_pos >= 10 ? 4'b0001 : 4'b0000;
+    assign y_pos_o = y_pos >= 10 ? y_pos - 10 : y_pos[3:0];
 endmodule

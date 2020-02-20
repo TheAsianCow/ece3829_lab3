@@ -1,7 +1,12 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
+<<<<<<< HEAD
 	<Run Id="synth_1" LaunchDir="C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="impl_1" LaunchDir="C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+=======
+	<Run Id="synth_1" LaunchDir="C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 		<Parent Id="synth_1"/>
 	</Run>
 	<Parameters>

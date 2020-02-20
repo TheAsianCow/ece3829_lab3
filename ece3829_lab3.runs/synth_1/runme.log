@@ -4,8 +4,8 @@
 
 
 ****** Vivado v2019.2 (64-bit)
-  **** SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
-  **** IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source lab3_top.tcl -notrace
@@ -15,6 +15,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
+<<<<<<< HEAD
 INFO: Helper process launched with PID 10236 
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 959.301 ; gain = 234.176
@@ -25,13 +26,25 @@ INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Jeffre
 INFO: [Synth 8-6157] synthesizing module 'slowclk_100k' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_100K.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'slowclk_100k' (2#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_100K.v:23]
 INFO: [Synth 8-6157] synthesizing module 'dac_sawtooth' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:23]
+=======
+INFO: Helper process launched with PID 24516 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 846.371 ; gain = 234.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab3_top' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1/.Xil/Vivado-20888-ALYSSAUNGERER/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1/.Xil/Vivado-20888-ALYSSAUNGERER/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'slowclk_100k' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_100K.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slowclk_100k' (2#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_100K.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dac_sawtooth' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:23]
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 	Parameter res bound to: 0 - type: integer 
 	Parameter step bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'dac_sawtooth' (3#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:23]
-INFO: [Synth 8-6157] synthesizing module 'shift_register_16b' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:23]
-WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'shift_register_16b' (4#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:23]
-INFO: [Synth 8-6157] synthesizing module 'vga_display' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dac_sawtooth' (3#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shift_register_16b' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'shift_register_16b' (4#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/shift_register_16b.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_display.v:23]
 	Parameter start bound to: 0 - type: integer 
 	Parameter dir_right bound to: 1 - type: integer 
 	Parameter dir_left bound to: 2 - type: integer 
@@ -39,40 +52,36 @@ INFO: [Synth 8-6157] synthesizing module 'vga_display' [C:/Users/Jeffrey Huang/D
 	Parameter dir_down bound to: 4 - type: integer 
 	Parameter other bound to: 5 - type: integer 
 	Parameter box_size bound to: 5'b11111 
-INFO: [Synth 8-6157] synthesizing module 'vga_clk' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_clk.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'vga_clk' (5#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_clk.v:23]
-INFO: [Synth 8-6157] synthesizing module 'slowclk_1M' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_1M.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'slowclk_1M' (6#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_1M.v:23]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:1]
-	Parameter in_low bound to: 2'b00 
-	Parameter in_waiting bound to: 2'b01 
-	Parameter in_high bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:31]
-WARNING: [Synth 8-567] referenced signal 'timeout' should be on the sensitivity list [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:30]
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (7#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:1]
-INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/ECE3829/vga_controller_640_60.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (8#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/ECE3829/vga_controller_640_60.vhd:88]
-INFO: [Synth 8-6155] done synthesizing module 'vga_display' (9#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_display.v:23]
-INFO: [Synth 8-6157] synthesizing module 'slowclock' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/new/slowclock.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'slowclock' (10#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/new/slowclock.v:23]
-INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/new/seven_seg.v:26]
-INFO: [Synth 8-6157] synthesizing module 'my_counter' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/my_counter.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'my_counter' (11#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/my_counter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'decoder2to4' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/decoder2to4.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'decoder2to4' (12#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/decoder2to4.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bcd7seg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/imports/new/bcd7seg.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bcd7seg' (13#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/imports/new/bcd7seg.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (14#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/new/seven_seg.v:26]
-WARNING: [Synth 8-3848] Net coords in module/entity lab3_top does not have driver. [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'lab3_top' (15#1) [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:23]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[15]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[14]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[13]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[12]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[11]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[10]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[9]
-WARNING: [Synth 8-3331] design seven_seg has unconnected port in[8]
+INFO: [Synth 8-6157] synthesizing module 'vga_clk' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_clk' (5#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slowclk_1M' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_1M.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slowclk_1M' (6#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/slowclk_1M.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:1]
+	Parameter zero bound to: 3'b000 
+	Parameter zero_to_one bound to: 3'b001 
+	Parameter one_wait bound to: 3'b010 
+	Parameter one bound to: 3'b011 
+	Parameter one_to_zero bound to: 3'b100 
+	Parameter zero_wait bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:37]
+WARNING: [Synth 8-567] referenced signal 'reset' should be on the sensitivity list [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:34]
+WARNING: [Synth 8-567] referenced signal 'in' should be on the sensitivity list [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:34]
+WARNING: [Synth 8-567] referenced signal 'timeout' should be on the sensitivity list [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (7#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/ECE3829/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (8#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/ECE3829/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (9#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slowclock' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/new/slowclock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slowclock' (10#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/new/slowclock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/new/seven_seg.v:26]
+INFO: [Synth 8-6157] synthesizing module 'my_counter' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/my_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_counter' (11#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/my_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2to4' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/decoder2to4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2to4' (12#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/new/decoder2to4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bcd7seg' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/imports/new/bcd7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd7seg' (13#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/imports/new/bcd7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (14#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/imports/sources_1/new/seven_seg.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'lab3_top' (15#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/lab3_top.v:23]
 WARNING: [Synth 8-3331] design dac_sawtooth has unconnected port clk
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[7]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[6]
@@ -83,7 +92,11 @@ WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.289 ; gain = 308.164
+=======
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 920.250 ; gain = 308.664
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -96,24 +109,34 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.289 ; gain = 308.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.289 ; gain = 308.164
 ---------------------------------------------------------------------------------
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1033.289 ; gain = 0.000
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 920.250 ; gain = 308.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 920.250 ; gain = 308.664
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 920.250 ; gain = 0.000
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
-Finished Parsing XDC File [c:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
-Parsing XDC File [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
-Finished Parsing XDC File [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab3_top_propImpl.xdc].
+Parsing XDC File [c:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [c:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
+Finished Parsing XDC File [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/constrs_1/new/lab3_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab3_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1138.246 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
@@ -121,38 +144,63 @@ No Unisim elements were transformed.
 Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1138.246 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1024.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1024.164 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.164 ; gain = 412.578
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.164 ; gain = 412.578
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.164 ; gain = 412.578
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debounce'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:35]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_display.v:88]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/new/vga_display.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:39]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  in_low |                              001 |                               00
-              in_waiting |                              010 |                               01
-                 in_high |                              100 |                               10
+                    zero |                           000001 |                              000
+             zero_to_one |                           000010 |                              001
+                one_wait |                           000100 |                              010
+                     one |                           001000 |                              011
+             one_to_zero |                           010000 |                              100
+               zero_wait |                           100000 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'debounce'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:35]
-WARNING: [Synth 8-327] inferring latch for variable 'cnt_en_reg' [C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v:39]
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1024.164 ; gain = 412.578
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -165,18 +213,17 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     11 Bit       Adders := 4     
-	   2 Input     10 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 4     
 	                2 Bit    Registers := 1     
@@ -184,14 +231,16 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 20    
+	   3 Input      6 Bit        Muxes := 4     
 	   2 Input      5 Bit        Muxes := 8     
-	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
-	   3 Input      3 Bit        Muxes := 4     
-	   2 Input      3 Bit        Muxes := 12    
-	   2 Input      1 Bit        Muxes := 8     
-	   3 Input      1 Bit        Muxes := 16    
+	   4 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 16    
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -239,10 +288,13 @@ Detailed RTL Component Info :
 +---Registers : 
 	                5 Bit    Registers := 1     
 +---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
-	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
-	   3 Input      1 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
 Module vga_controller_640_60 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -255,13 +307,14 @@ Detailed RTL Component Info :
 Module vga_display 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
 +---Registers : 
-	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 5     
 	   5 Input      1 Bit        Muxes := 1     
 Module slowclock 
@@ -281,7 +334,7 @@ Detailed RTL Component Info :
 Module seven_seg 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -306,6 +359,7 @@ WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[3]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design lab3_top has unconnected port sw[0]
+<<<<<<< HEAD
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (p_0_out_inferred/\disp/y_pos_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (p_0_out_inferred/\disp/y_pos_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (p_0_out_inferred__0/\disp/x_pos_reg[1] )
@@ -345,6 +399,10 @@ WARNING: [Synth 8-3332] Sequential element (disp/dl/FSM_onehot_next_state_reg[0]
 WARNING: [Synth 8-3332] Sequential element (disp/dl/cnt_en_reg) is unused and will be removed from module lab3_top.
 ---------------------------------------------------------------------------------
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.164 ; gain = 412.578
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -356,13 +414,21 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1024.164 ; gain = 412.578
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1024.164 ; gain = 412.578
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -374,7 +440,11 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1138.246 ; gain = 413.121
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1024.355 ; gain = 412.770
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -398,13 +468,21 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1140.449 ; gain = 415.324
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1140.449 ; gain = 415.324
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -423,25 +501,41 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1140.449 ; gain = 415.324
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1140.449 ; gain = 415.324
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1140.449 ; gain = 415.324
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1140.449 ; gain = 415.324
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -459,6 +553,7 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
+<<<<<<< HEAD
 |2     |CARRY4    |    30|
 |3     |LUT1      |    11|
 |4     |LUT2      |    33|
@@ -470,12 +565,29 @@ Report Cell Usage:
 |10    |FDRE      |   116|
 |11    |IBUF      |     5|
 |12    |OBUF      |    29|
+=======
+|2     |BUFG      |     1|
+|3     |CARRY4    |    30|
+|4     |LUT1      |    12|
+|5     |LUT2      |    64|
+|6     |LUT3      |    41|
+|7     |LUT4      |    45|
+|8     |LUT5      |    32|
+|9     |LUT6      |    60|
+|10    |FDCE      |    66|
+|11    |FDPE      |     4|
+|12    |FDRE      |   117|
+|13    |LD        |    24|
+|14    |IBUF      |     5|
+|15    |OBUF      |    29|
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 +------+----------+------+
 
 Report Instance Areas: 
 +------+-----------------+----------------------+------+
 |      |Instance         |Module                |Cells |
 +------+-----------------+----------------------+------+
+<<<<<<< HEAD
 |1     |top              |                      |   360|
 |2     |  clk0           |slowclk_100k          |    27|
 |3     |  dac            |shift_register_16b    |    16|
@@ -498,21 +610,64 @@ Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 
 INFO: [Project 1-571] Translating synthesized netlist
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1152.508 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+=======
+|1     |top              |                      |   532|
+|2     |  clk0           |slowclk_100k          |    19|
+|3     |  dac            |shift_register_16b    |    18|
+|4     |  disp           |vga_display           |   390|
+|5     |    clk2         |vga_clk               |    33|
+|6     |    clk3         |slowclk_1M            |    33|
+|7     |    dd           |debounce              |    33|
+|8     |    display      |vga_controller_640_60 |   110|
+|9     |    dl           |debounce_0            |    34|
+|10    |    dr           |debounce_1            |    35|
+|11    |    du           |debounce_2            |    38|
+|12    |  seven_seg_clk  |slowclock             |    33|
+|13    |  seven_seg_disp |seven_seg             |     8|
+|14    |    m0           |my_counter            |     8|
+|15    |  waveform       |dac_sawtooth          |    27|
++------+-----------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1030.145 ; gain = 314.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1030.145 ; gain = 418.559
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1030.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1156.504 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.500 ; gain = 0.000
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 24 instances were transformed.
+  LD => LDCE: 24 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
+<<<<<<< HEAD
 55 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1156.504 ; gain = 699.719
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1156.504 ; gain = 0.000
+=======
+48 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1034.500 ; gain = 695.359
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.500 ; gain = 0.000
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1/lab3_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1/lab3_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file lab3_top_utilization_synth.rpt -pb lab3_top_utilization_synth.pb
+<<<<<<< HEAD
 INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 21:16:07 2020...
+=======
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 22:02:47 2020...
+>>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da

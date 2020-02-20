@@ -34,10 +34,10 @@ module seven_seg(
     
     my_counter m0(clk, counter_out);
     decoder2to4 m1(counter_out, an);
-    assign in_sel = (counter_out==2'b00)?in[3:0]:
-        (counter_out==2'b01)?in[7:4]:
-        (counter_out==2'b10)?4'b0000:
-        4'b0000;
+    assign in_sel = (counter_out==2'b00)?in[11:8]:
+        (counter_out==2'b01)?in[15:12]:
+        (counter_out==2'b10)?in[3:0]:
+        in[7:4];
     
     bcd7seg m2(in_sel,seg);
 endmodule
