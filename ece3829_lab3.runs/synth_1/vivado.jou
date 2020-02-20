@@ -1,18 +1,10 @@
 #-----------------------------------------------------------
 # Vivado v2019.2 (64-bit)
-<<<<<<< HEAD
-# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
-# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Wed Feb 19 21:15:19 2020
-# Process ID: 1588
-# Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab3/ece3829_lab3.runs/synth_1
-=======
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Feb 19 22:02:01 2020
-# Process ID: 20888
+# Start of session at: Thu Feb 20 14:22:12 2020
+# Process ID: 2992
 # Current directory: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1
->>>>>>> 4c5abed497c113f6589bf0a3c027f3001dff49da
 # Command line: vivado.exe -log lab3_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab3_top.tcl
 # Log file: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1/lab3_top.vds
 # Journal file: C:/Users/alyss/Documents/GitHub/ece3829_lab3/ece3829_lab3.runs/synth_1\vivado.jou
