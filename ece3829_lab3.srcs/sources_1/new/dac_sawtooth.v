@@ -53,6 +53,8 @@ module dac_sawtooth(
                 if((count+2)>=128) next_state = res;
                 else next_state = step;
             end
+            default:
+                next_state = res;
         endcase
     end 
     

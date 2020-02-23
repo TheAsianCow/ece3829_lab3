@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ece3829_lab3.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../ece3829_lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../ece3829_lab3.srcs/sources_1/imports/Downloads/Debounce.v" \
+"../../../../ece3829_lab3.srcs/sources_1/imports/imports/sources_1/imports/new/bcd7seg.v" \
+"../../../../ece3829_lab3.srcs/sources_1/new/dac_sawtooth.v" \
+"../../../../ece3829_lab3.srcs/sources_1/imports/imports/new/decoder2to4.v" \
+"../../../../ece3829_lab3.srcs/sources_1/imports/imports/new/my_counter.v" \
+"../../../../ece3829_lab3.srcs/sources_1/imports/imports/sources_1/new/seven_seg.v" \
+"../../../../ece3829_lab3.srcs/sources_1/new/shift_register_16b.v" \
+"../../../../ece3829_lab3.srcs/sources_1/new/slowclk_100K.v" \
+"../../../../ece3829_lab3.srcs/sources_1/new/slowclk_1M.v" \
+"../../../../ece3829_lab3.srcs/sources_1/imports/new/slowclock.v" \
+"../../../../ece3829_lab3.srcs/sources_1/new/vga_clk.v" \
+"../../../../ece3829_lab3.srcs/sources_1/new/vga_display.v" \
+"../../../../ece3829_lab3.srcs/sources_1/new/lab3_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
